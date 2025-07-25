@@ -22,7 +22,7 @@ import (
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddCustomLineResponse
-func (client *Client) AddCustomLineWithContext(ctx context.Context, request *AddCustomLineRequest, runtime *dara.RuntimeOptions) (_result *AddCustomLineResponse, _err error) {
+func AddCustomLineWithContext(ctx context.Context, client *Client, request *AddCustomLineRequest, runtime *dara.RuntimeOptions) (_result *AddCustomLineResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -76,7 +76,7 @@ func (client *Client) AddCustomLineWithContext(ctx context.Context, request *Add
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDnsCacheDomainResponse
-func (client *Client) AddDnsCacheDomainWithContext(ctx context.Context, request *AddDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *AddDnsCacheDomainResponse, _err error) {
+func AddDnsCacheDomainWithContext(ctx context.Context, client *Client, request *AddDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *AddDnsCacheDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -150,7 +150,7 @@ func (client *Client) AddDnsCacheDomainWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDnsGtmAccessStrategyResponse
-func (client *Client) AddDnsGtmAccessStrategyWithContext(ctx context.Context, request *AddDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmAccessStrategyResponse, _err error) {
+func AddDnsGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *AddDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -256,7 +256,7 @@ func (client *Client) AddDnsGtmAccessStrategyWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDnsGtmAddressPoolResponse
-func (client *Client) AddDnsGtmAddressPoolWithContext(ctx context.Context, request *AddDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmAddressPoolResponse, _err error) {
+func AddDnsGtmAddressPoolWithContext(ctx context.Context, client *Client, request *AddDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -350,7 +350,7 @@ func (client *Client) AddDnsGtmAddressPoolWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDnsGtmMonitorResponse
-func (client *Client) AddDnsGtmMonitorWithContext(ctx context.Context, request *AddDnsGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmMonitorResponse, _err error) {
+func AddDnsGtmMonitorWithContext(ctx context.Context, client *Client, request *AddDnsGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *AddDnsGtmMonitorResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -426,7 +426,7 @@ func (client *Client) AddDnsGtmMonitorWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDomainResponse
-func (client *Client) AddDomainWithContext(ctx context.Context, request *AddDomainRequest, runtime *dara.RuntimeOptions) (_result *AddDomainResponse, _err error) {
+func AddDomainWithContext(ctx context.Context, client *Client, request *AddDomainRequest, runtime *dara.RuntimeOptions) (_result *AddDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -480,7 +480,7 @@ func (client *Client) AddDomainWithContext(ctx context.Context, request *AddDoma
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDomainBackupResponse
-func (client *Client) AddDomainBackupWithContext(ctx context.Context, request *AddDomainBackupRequest, runtime *dara.RuntimeOptions) (_result *AddDomainBackupResponse, _err error) {
+func AddDomainBackupWithContext(ctx context.Context, client *Client, request *AddDomainBackupRequest, runtime *dara.RuntimeOptions) (_result *AddDomainBackupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -530,7 +530,7 @@ func (client *Client) AddDomainBackupWithContext(ctx context.Context, request *A
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDomainGroupResponse
-func (client *Client) AddDomainGroupWithContext(ctx context.Context, request *AddDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *AddDomainGroupResponse, _err error) {
+func AddDomainGroupWithContext(ctx context.Context, client *Client, request *AddDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *AddDomainGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -576,7 +576,7 @@ func (client *Client) AddDomainGroupWithContext(ctx context.Context, request *Ad
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddDomainRecordResponse
-func (client *Client) AddDomainRecordWithContext(ctx context.Context, request *AddDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *AddDomainRecordResponse, _err error) {
+func AddDomainRecordWithContext(ctx context.Context, client *Client, request *AddDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *AddDomainRecordResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -646,7 +646,7 @@ func (client *Client) AddDomainRecordWithContext(ctx context.Context, request *A
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddGtmAccessStrategyResponse
-func (client *Client) AddGtmAccessStrategyWithContext(ctx context.Context, request *AddGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *AddGtmAccessStrategyResponse, _err error) {
+func AddGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *AddGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *AddGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -708,7 +708,7 @@ func (client *Client) AddGtmAccessStrategyWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddGtmAddressPoolResponse
-func (client *Client) AddGtmAddressPoolWithContext(ctx context.Context, request *AddGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *AddGtmAddressPoolResponse, _err error) {
+func AddGtmAddressPoolWithContext(ctx context.Context, client *Client, request *AddGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *AddGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -798,7 +798,7 @@ func (client *Client) AddGtmAddressPoolWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddGtmMonitorResponse
-func (client *Client) AddGtmMonitorWithContext(ctx context.Context, request *AddGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *AddGtmMonitorResponse, _err error) {
+func AddGtmMonitorWithContext(ctx context.Context, client *Client, request *AddGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *AddGtmMonitorResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -868,7 +868,7 @@ func (client *Client) AddGtmMonitorWithContext(ctx context.Context, request *Add
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return AddGtmRecoveryPlanResponse
-func (client *Client) AddGtmRecoveryPlanWithContext(ctx context.Context, request *AddGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *AddGtmRecoveryPlanResponse, _err error) {
+func AddGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *AddGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *AddGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -928,7 +928,7 @@ func (client *Client) AddGtmRecoveryPlanWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return BindInstanceDomainsResponse
-func (client *Client) BindInstanceDomainsWithContext(ctx context.Context, request *BindInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *BindInstanceDomainsResponse, _err error) {
+func BindInstanceDomainsWithContext(ctx context.Context, client *Client, request *BindInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *BindInstanceDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -982,7 +982,7 @@ func (client *Client) BindInstanceDomainsWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ChangeDomainGroupResponse
-func (client *Client) ChangeDomainGroupWithContext(ctx context.Context, request *ChangeDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *ChangeDomainGroupResponse, _err error) {
+func ChangeDomainGroupWithContext(ctx context.Context, client *Client, request *ChangeDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *ChangeDomainGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1038,7 +1038,7 @@ func (client *Client) ChangeDomainGroupWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ChangeDomainOfDnsProductResponse
-func (client *Client) ChangeDomainOfDnsProductWithContext(ctx context.Context, request *ChangeDomainOfDnsProductRequest, runtime *dara.RuntimeOptions) (_result *ChangeDomainOfDnsProductResponse, _err error) {
+func ChangeDomainOfDnsProductWithContext(ctx context.Context, client *Client, request *ChangeDomainOfDnsProductRequest, runtime *dara.RuntimeOptions) (_result *ChangeDomainOfDnsProductResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1096,7 +1096,7 @@ func (client *Client) ChangeDomainOfDnsProductWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CopyGtmConfigResponse
-func (client *Client) CopyGtmConfigWithContext(ctx context.Context, request *CopyGtmConfigRequest, runtime *dara.RuntimeOptions) (_result *CopyGtmConfigResponse, _err error) {
+func CopyGtmConfigWithContext(ctx context.Context, client *Client, request *CopyGtmConfigRequest, runtime *dara.RuntimeOptions) (_result *CopyGtmConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1150,7 +1150,7 @@ func (client *Client) CopyGtmConfigWithContext(ctx context.Context, request *Cop
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreateCloudGtmAddressResponse
-func (client *Client) CreateCloudGtmAddressWithContext(ctx context.Context, tmpReq *CreateCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmAddressResponse, _err error) {
+func CreateCloudGtmAddressWithContext(ctx context.Context, client *Client, tmpReq *CreateCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmAddressResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1242,7 +1242,7 @@ func (client *Client) CreateCloudGtmAddressWithContext(ctx context.Context, tmpR
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreateCloudGtmAddressPoolResponse
-func (client *Client) CreateCloudGtmAddressPoolWithContext(ctx context.Context, request *CreateCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmAddressPoolResponse, _err error) {
+func CreateCloudGtmAddressPoolWithContext(ctx context.Context, client *Client, request *CreateCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1304,7 +1304,7 @@ func (client *Client) CreateCloudGtmAddressPoolWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreateCloudGtmInstanceConfigResponse
-func (client *Client) CreateCloudGtmInstanceConfigWithContext(ctx context.Context, request *CreateCloudGtmInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmInstanceConfigResponse, _err error) {
+func CreateCloudGtmInstanceConfigWithContext(ctx context.Context, client *Client, request *CreateCloudGtmInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmInstanceConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1382,7 +1382,7 @@ func (client *Client) CreateCloudGtmInstanceConfigWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreateCloudGtmMonitorTemplateResponse
-func (client *Client) CreateCloudGtmMonitorTemplateWithContext(ctx context.Context, tmpReq *CreateCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmMonitorTemplateResponse, _err error) {
+func CreateCloudGtmMonitorTemplateWithContext(ctx context.Context, client *Client, tmpReq *CreateCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *CreateCloudGtmMonitorTemplateResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1470,7 +1470,7 @@ func (client *Client) CreateCloudGtmMonitorTemplateWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreatePdnsAppKeyResponse
-func (client *Client) CreatePdnsAppKeyWithContext(ctx context.Context, request *CreatePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *CreatePdnsAppKeyResponse, _err error) {
+func CreatePdnsAppKeyWithContext(ctx context.Context, client *Client, request *CreatePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *CreatePdnsAppKeyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1516,7 +1516,7 @@ func (client *Client) CreatePdnsAppKeyWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return CreatePdnsUdpIpSegmentResponse
-func (client *Client) CreatePdnsUdpIpSegmentWithContext(ctx context.Context, request *CreatePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *CreatePdnsUdpIpSegmentResponse, _err error) {
+func CreatePdnsUdpIpSegmentWithContext(ctx context.Context, client *Client, request *CreatePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *CreatePdnsUdpIpSegmentResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1570,7 +1570,7 @@ func (client *Client) CreatePdnsUdpIpSegmentWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteCloudGtmAddressResponse
-func (client *Client) DeleteCloudGtmAddressWithContext(ctx context.Context, request *DeleteCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmAddressResponse, _err error) {
+func DeleteCloudGtmAddressWithContext(ctx context.Context, client *Client, request *DeleteCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmAddressResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1620,7 +1620,7 @@ func (client *Client) DeleteCloudGtmAddressWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteCloudGtmAddressPoolResponse
-func (client *Client) DeleteCloudGtmAddressPoolWithContext(ctx context.Context, request *DeleteCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmAddressPoolResponse, _err error) {
+func DeleteCloudGtmAddressPoolWithContext(ctx context.Context, client *Client, request *DeleteCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1670,7 +1670,7 @@ func (client *Client) DeleteCloudGtmAddressPoolWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteCloudGtmInstanceConfigResponse
-func (client *Client) DeleteCloudGtmInstanceConfigWithContext(ctx context.Context, request *DeleteCloudGtmInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmInstanceConfigResponse, _err error) {
+func DeleteCloudGtmInstanceConfigWithContext(ctx context.Context, client *Client, request *DeleteCloudGtmInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmInstanceConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1724,7 +1724,7 @@ func (client *Client) DeleteCloudGtmInstanceConfigWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteCloudGtmMonitorTemplateResponse
-func (client *Client) DeleteCloudGtmMonitorTemplateWithContext(ctx context.Context, request *DeleteCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmMonitorTemplateResponse, _err error) {
+func DeleteCloudGtmMonitorTemplateWithContext(ctx context.Context, client *Client, request *DeleteCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *DeleteCloudGtmMonitorTemplateResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1774,7 +1774,7 @@ func (client *Client) DeleteCloudGtmMonitorTemplateWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteCustomLinesResponse
-func (client *Client) DeleteCustomLinesWithContext(ctx context.Context, request *DeleteCustomLinesRequest, runtime *dara.RuntimeOptions) (_result *DeleteCustomLinesResponse, _err error) {
+func DeleteCustomLinesWithContext(ctx context.Context, client *Client, request *DeleteCustomLinesRequest, runtime *dara.RuntimeOptions) (_result *DeleteCustomLinesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1820,7 +1820,7 @@ func (client *Client) DeleteCustomLinesWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDnsCacheDomainResponse
-func (client *Client) DeleteDnsCacheDomainWithContext(ctx context.Context, request *DeleteDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsCacheDomainResponse, _err error) {
+func DeleteDnsCacheDomainWithContext(ctx context.Context, client *Client, request *DeleteDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsCacheDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1862,7 +1862,7 @@ func (client *Client) DeleteDnsCacheDomainWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDnsGtmAccessStrategyResponse
-func (client *Client) DeleteDnsGtmAccessStrategyWithContext(ctx context.Context, request *DeleteDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsGtmAccessStrategyResponse, _err error) {
+func DeleteDnsGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *DeleteDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1904,7 +1904,7 @@ func (client *Client) DeleteDnsGtmAccessStrategyWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDnsGtmAddressPoolResponse
-func (client *Client) DeleteDnsGtmAddressPoolWithContext(ctx context.Context, request *DeleteDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsGtmAddressPoolResponse, _err error) {
+func DeleteDnsGtmAddressPoolWithContext(ctx context.Context, client *Client, request *DeleteDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteDnsGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -1950,7 +1950,7 @@ func (client *Client) DeleteDnsGtmAddressPoolWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDomainResponse
-func (client *Client) DeleteDomainWithContext(ctx context.Context, request *DeleteDomainRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainResponse, _err error) {
+func DeleteDomainWithContext(ctx context.Context, client *Client, request *DeleteDomainRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2000,7 +2000,7 @@ func (client *Client) DeleteDomainWithContext(ctx context.Context, request *Dele
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDomainGroupResponse
-func (client *Client) DeleteDomainGroupWithContext(ctx context.Context, request *DeleteDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainGroupResponse, _err error) {
+func DeleteDomainGroupWithContext(ctx context.Context, client *Client, request *DeleteDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2046,7 +2046,7 @@ func (client *Client) DeleteDomainGroupWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteDomainRecordResponse
-func (client *Client) DeleteDomainRecordWithContext(ctx context.Context, request *DeleteDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainRecordResponse, _err error) {
+func DeleteDomainRecordWithContext(ctx context.Context, client *Client, request *DeleteDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *DeleteDomainRecordResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2092,7 +2092,7 @@ func (client *Client) DeleteDomainRecordWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteGtmAccessStrategyResponse
-func (client *Client) DeleteGtmAccessStrategyWithContext(ctx context.Context, request *DeleteGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmAccessStrategyResponse, _err error) {
+func DeleteGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *DeleteGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2134,7 +2134,7 @@ func (client *Client) DeleteGtmAccessStrategyWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteGtmAddressPoolResponse
-func (client *Client) DeleteGtmAddressPoolWithContext(ctx context.Context, request *DeleteGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmAddressPoolResponse, _err error) {
+func DeleteGtmAddressPoolWithContext(ctx context.Context, client *Client, request *DeleteGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2176,7 +2176,7 @@ func (client *Client) DeleteGtmAddressPoolWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteGtmRecoveryPlanResponse
-func (client *Client) DeleteGtmRecoveryPlanWithContext(ctx context.Context, request *DeleteGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmRecoveryPlanResponse, _err error) {
+func DeleteGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *DeleteGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *DeleteGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2226,7 +2226,7 @@ func (client *Client) DeleteGtmRecoveryPlanWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DeleteSubDomainRecordsResponse
-func (client *Client) DeleteSubDomainRecordsWithContext(ctx context.Context, request *DeleteSubDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DeleteSubDomainRecordsResponse, _err error) {
+func DeleteSubDomainRecordsWithContext(ctx context.Context, client *Client, request *DeleteSubDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DeleteSubDomainRecordsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2284,7 +2284,7 @@ func (client *Client) DeleteSubDomainRecordsWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeBatchResultCountResponse
-func (client *Client) DescribeBatchResultCountWithContext(ctx context.Context, request *DescribeBatchResultCountRequest, runtime *dara.RuntimeOptions) (_result *DescribeBatchResultCountResponse, _err error) {
+func DescribeBatchResultCountWithContext(ctx context.Context, client *Client, request *DescribeBatchResultCountRequest, runtime *dara.RuntimeOptions) (_result *DescribeBatchResultCountResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2338,7 +2338,7 @@ func (client *Client) DescribeBatchResultCountWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeBatchResultDetailResponse
-func (client *Client) DescribeBatchResultDetailWithContext(ctx context.Context, request *DescribeBatchResultDetailRequest, runtime *dara.RuntimeOptions) (_result *DescribeBatchResultDetailResponse, _err error) {
+func DescribeBatchResultDetailWithContext(ctx context.Context, client *Client, request *DescribeBatchResultDetailRequest, runtime *dara.RuntimeOptions) (_result *DescribeBatchResultDetailResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2400,7 +2400,7 @@ func (client *Client) DescribeBatchResultDetailWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmAddressResponse
-func (client *Client) DescribeCloudGtmAddressWithContext(ctx context.Context, request *DescribeCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressResponse, _err error) {
+func DescribeCloudGtmAddressWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2450,7 +2450,7 @@ func (client *Client) DescribeCloudGtmAddressWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmAddressPoolResponse
-func (client *Client) DescribeCloudGtmAddressPoolWithContext(ctx context.Context, request *DescribeCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressPoolResponse, _err error) {
+func DescribeCloudGtmAddressPoolWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2500,7 +2500,7 @@ func (client *Client) DescribeCloudGtmAddressPoolWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmAddressPoolReferenceResponse
-func (client *Client) DescribeCloudGtmAddressPoolReferenceWithContext(ctx context.Context, request *DescribeCloudGtmAddressPoolReferenceRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressPoolReferenceResponse, _err error) {
+func DescribeCloudGtmAddressPoolReferenceWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmAddressPoolReferenceRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressPoolReferenceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2550,7 +2550,7 @@ func (client *Client) DescribeCloudGtmAddressPoolReferenceWithContext(ctx contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmAddressReferenceResponse
-func (client *Client) DescribeCloudGtmAddressReferenceWithContext(ctx context.Context, request *DescribeCloudGtmAddressReferenceRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressReferenceResponse, _err error) {
+func DescribeCloudGtmAddressReferenceWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmAddressReferenceRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmAddressReferenceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2596,7 +2596,7 @@ func (client *Client) DescribeCloudGtmAddressReferenceWithContext(ctx context.Co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmGlobalAlertResponse
-func (client *Client) DescribeCloudGtmGlobalAlertWithContext(ctx context.Context, request *DescribeCloudGtmGlobalAlertRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmGlobalAlertResponse, _err error) {
+func DescribeCloudGtmGlobalAlertWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmGlobalAlertRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmGlobalAlertResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2638,7 +2638,7 @@ func (client *Client) DescribeCloudGtmGlobalAlertWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmInstanceConfigAlertResponse
-func (client *Client) DescribeCloudGtmInstanceConfigAlertWithContext(ctx context.Context, request *DescribeCloudGtmInstanceConfigAlertRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmInstanceConfigAlertResponse, _err error) {
+func DescribeCloudGtmInstanceConfigAlertWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmInstanceConfigAlertRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmInstanceConfigAlertResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2692,7 +2692,7 @@ func (client *Client) DescribeCloudGtmInstanceConfigAlertWithContext(ctx context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmInstanceConfigFullInfoResponse
-func (client *Client) DescribeCloudGtmInstanceConfigFullInfoWithContext(ctx context.Context, request *DescribeCloudGtmInstanceConfigFullInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmInstanceConfigFullInfoResponse, _err error) {
+func DescribeCloudGtmInstanceConfigFullInfoWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmInstanceConfigFullInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmInstanceConfigFullInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2746,7 +2746,7 @@ func (client *Client) DescribeCloudGtmInstanceConfigFullInfoWithContext(ctx cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmMonitorTemplateResponse
-func (client *Client) DescribeCloudGtmMonitorTemplateWithContext(ctx context.Context, request *DescribeCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmMonitorTemplateResponse, _err error) {
+func DescribeCloudGtmMonitorTemplateWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmMonitorTemplateResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2788,7 +2788,7 @@ func (client *Client) DescribeCloudGtmMonitorTemplateWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCloudGtmSummaryResponse
-func (client *Client) DescribeCloudGtmSummaryWithContext(ctx context.Context, request *DescribeCloudGtmSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmSummaryResponse, _err error) {
+func DescribeCloudGtmSummaryWithContext(ctx context.Context, client *Client, request *DescribeCloudGtmSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeCloudGtmSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2830,7 +2830,7 @@ func (client *Client) DescribeCloudGtmSummaryWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCustomLineResponse
-func (client *Client) DescribeCustomLineWithContext(ctx context.Context, request *DescribeCustomLineRequest, runtime *dara.RuntimeOptions) (_result *DescribeCustomLineResponse, _err error) {
+func DescribeCustomLineWithContext(ctx context.Context, client *Client, request *DescribeCustomLineRequest, runtime *dara.RuntimeOptions) (_result *DescribeCustomLineResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2876,7 +2876,7 @@ func (client *Client) DescribeCustomLineWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeCustomLinesResponse
-func (client *Client) DescribeCustomLinesWithContext(ctx context.Context, request *DescribeCustomLinesRequest, runtime *dara.RuntimeOptions) (_result *DescribeCustomLinesResponse, _err error) {
+func DescribeCustomLinesWithContext(ctx context.Context, client *Client, request *DescribeCustomLinesRequest, runtime *dara.RuntimeOptions) (_result *DescribeCustomLinesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2930,7 +2930,7 @@ func (client *Client) DescribeCustomLinesWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDNSSLBSubDomainsResponse
-func (client *Client) DescribeDNSSLBSubDomainsWithContext(ctx context.Context, request *DescribeDNSSLBSubDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDNSSLBSubDomainsResponse, _err error) {
+func DescribeDNSSLBSubDomainsWithContext(ctx context.Context, client *Client, request *DescribeDNSSLBSubDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDNSSLBSubDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -2992,7 +2992,7 @@ func (client *Client) DescribeDNSSLBSubDomainsWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsCacheDomainsResponse
-func (client *Client) DescribeDnsCacheDomainsWithContext(ctx context.Context, request *DescribeDnsCacheDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsCacheDomainsResponse, _err error) {
+func DescribeDnsCacheDomainsWithContext(ctx context.Context, client *Client, request *DescribeDnsCacheDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsCacheDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3046,7 +3046,7 @@ func (client *Client) DescribeDnsCacheDomainsWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAccessStrategiesResponse
-func (client *Client) DescribeDnsGtmAccessStrategiesWithContext(ctx context.Context, request *DescribeDnsGtmAccessStrategiesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategiesResponse, _err error) {
+func DescribeDnsGtmAccessStrategiesWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAccessStrategiesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategiesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3104,7 +3104,7 @@ func (client *Client) DescribeDnsGtmAccessStrategiesWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAccessStrategyResponse
-func (client *Client) DescribeDnsGtmAccessStrategyWithContext(ctx context.Context, request *DescribeDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategyResponse, _err error) {
+func DescribeDnsGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3150,7 +3150,7 @@ func (client *Client) DescribeDnsGtmAccessStrategyWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAccessStrategyAvailableConfigResponse
-func (client *Client) DescribeDnsGtmAccessStrategyAvailableConfigWithContext(ctx context.Context, request *DescribeDnsGtmAccessStrategyAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategyAvailableConfigResponse, _err error) {
+func DescribeDnsGtmAccessStrategyAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAccessStrategyAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAccessStrategyAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3200,7 +3200,7 @@ func (client *Client) DescribeDnsGtmAccessStrategyAvailableConfigWithContext(ctx
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAddrAttributeInfoResponse
-func (client *Client) DescribeDnsGtmAddrAttributeInfoWithContext(ctx context.Context, request *DescribeDnsGtmAddrAttributeInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAddrAttributeInfoResponse, _err error) {
+func DescribeDnsGtmAddrAttributeInfoWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAddrAttributeInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAddrAttributeInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3250,7 +3250,7 @@ func (client *Client) DescribeDnsGtmAddrAttributeInfoWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAddressPoolAvailableConfigResponse
-func (client *Client) DescribeDnsGtmAddressPoolAvailableConfigWithContext(ctx context.Context, request *DescribeDnsGtmAddressPoolAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAddressPoolAvailableConfigResponse, _err error) {
+func DescribeDnsGtmAddressPoolAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAddressPoolAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAddressPoolAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3292,7 +3292,7 @@ func (client *Client) DescribeDnsGtmAddressPoolAvailableConfigWithContext(ctx co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmAvailableAlertGroupResponse
-func (client *Client) DescribeDnsGtmAvailableAlertGroupWithContext(ctx context.Context, request *DescribeDnsGtmAvailableAlertGroupRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAvailableAlertGroupResponse, _err error) {
+func DescribeDnsGtmAvailableAlertGroupWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmAvailableAlertGroupRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmAvailableAlertGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3334,7 +3334,7 @@ func (client *Client) DescribeDnsGtmAvailableAlertGroupWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstanceResponse
-func (client *Client) DescribeDnsGtmInstanceWithContext(ctx context.Context, request *DescribeDnsGtmInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceResponse, _err error) {
+func DescribeDnsGtmInstanceWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3380,7 +3380,7 @@ func (client *Client) DescribeDnsGtmInstanceWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstanceAddressPoolResponse
-func (client *Client) DescribeDnsGtmInstanceAddressPoolWithContext(ctx context.Context, request *DescribeDnsGtmInstanceAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceAddressPoolResponse, _err error) {
+func DescribeDnsGtmInstanceAddressPoolWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstanceAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3426,7 +3426,7 @@ func (client *Client) DescribeDnsGtmInstanceAddressPoolWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstanceAddressPoolsResponse
-func (client *Client) DescribeDnsGtmInstanceAddressPoolsWithContext(ctx context.Context, request *DescribeDnsGtmInstanceAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceAddressPoolsResponse, _err error) {
+func DescribeDnsGtmInstanceAddressPoolsWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstanceAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceAddressPoolsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3480,7 +3480,7 @@ func (client *Client) DescribeDnsGtmInstanceAddressPoolsWithContext(ctx context.
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstanceStatusResponse
-func (client *Client) DescribeDnsGtmInstanceStatusWithContext(ctx context.Context, request *DescribeDnsGtmInstanceStatusRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceStatusResponse, _err error) {
+func DescribeDnsGtmInstanceStatusWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstanceStatusRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3526,7 +3526,7 @@ func (client *Client) DescribeDnsGtmInstanceStatusWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstanceSystemCnameResponse
-func (client *Client) DescribeDnsGtmInstanceSystemCnameWithContext(ctx context.Context, request *DescribeDnsGtmInstanceSystemCnameRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceSystemCnameResponse, _err error) {
+func DescribeDnsGtmInstanceSystemCnameWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstanceSystemCnameRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstanceSystemCnameResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3572,7 +3572,7 @@ func (client *Client) DescribeDnsGtmInstanceSystemCnameWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmInstancesResponse
-func (client *Client) DescribeDnsGtmInstancesWithContext(ctx context.Context, request *DescribeDnsGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstancesResponse, _err error) {
+func DescribeDnsGtmInstancesWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3630,7 +3630,7 @@ func (client *Client) DescribeDnsGtmInstancesWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmLogsResponse
-func (client *Client) DescribeDnsGtmLogsWithContext(ctx context.Context, request *DescribeDnsGtmLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmLogsResponse, _err error) {
+func DescribeDnsGtmLogsWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3696,7 +3696,7 @@ func (client *Client) DescribeDnsGtmLogsWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmMonitorAvailableConfigResponse
-func (client *Client) DescribeDnsGtmMonitorAvailableConfigWithContext(ctx context.Context, request *DescribeDnsGtmMonitorAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmMonitorAvailableConfigResponse, _err error) {
+func DescribeDnsGtmMonitorAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmMonitorAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmMonitorAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3738,7 +3738,7 @@ func (client *Client) DescribeDnsGtmMonitorAvailableConfigWithContext(ctx contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsGtmMonitorConfigResponse
-func (client *Client) DescribeDnsGtmMonitorConfigWithContext(ctx context.Context, request *DescribeDnsGtmMonitorConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmMonitorConfigResponse, _err error) {
+func DescribeDnsGtmMonitorConfigWithContext(ctx context.Context, client *Client, request *DescribeDnsGtmMonitorConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsGtmMonitorConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3784,7 +3784,7 @@ func (client *Client) DescribeDnsGtmMonitorConfigWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsProductInstanceResponse
-func (client *Client) DescribeDnsProductInstanceWithContext(ctx context.Context, request *DescribeDnsProductInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsProductInstanceResponse, _err error) {
+func DescribeDnsProductInstanceWithContext(ctx context.Context, client *Client, request *DescribeDnsProductInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsProductInstanceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3838,7 +3838,7 @@ func (client *Client) DescribeDnsProductInstanceWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDnsProductInstancesResponse
-func (client *Client) DescribeDnsProductInstancesWithContext(ctx context.Context, request *DescribeDnsProductInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsProductInstancesResponse, _err error) {
+func DescribeDnsProductInstancesWithContext(ctx context.Context, client *Client, request *DescribeDnsProductInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeDnsProductInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3904,7 +3904,7 @@ func (client *Client) DescribeDnsProductInstancesWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohAccountStatisticsResponse
-func (client *Client) DescribeDohAccountStatisticsWithContext(ctx context.Context, request *DescribeDohAccountStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohAccountStatisticsResponse, _err error) {
+func DescribeDohAccountStatisticsWithContext(ctx context.Context, client *Client, request *DescribeDohAccountStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohAccountStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -3954,7 +3954,7 @@ func (client *Client) DescribeDohAccountStatisticsWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohDomainStatisticsResponse
-func (client *Client) DescribeDohDomainStatisticsWithContext(ctx context.Context, request *DescribeDohDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohDomainStatisticsResponse, _err error) {
+func DescribeDohDomainStatisticsWithContext(ctx context.Context, client *Client, request *DescribeDohDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohDomainStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4004,7 +4004,7 @@ func (client *Client) DescribeDohDomainStatisticsWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohDomainStatisticsSummaryResponse
-func (client *Client) DescribeDohDomainStatisticsSummaryWithContext(ctx context.Context, request *DescribeDohDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohDomainStatisticsSummaryResponse, _err error) {
+func DescribeDohDomainStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeDohDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohDomainStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4062,7 +4062,7 @@ func (client *Client) DescribeDohDomainStatisticsSummaryWithContext(ctx context.
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohSubDomainStatisticsResponse
-func (client *Client) DescribeDohSubDomainStatisticsWithContext(ctx context.Context, request *DescribeDohSubDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohSubDomainStatisticsResponse, _err error) {
+func DescribeDohSubDomainStatisticsWithContext(ctx context.Context, client *Client, request *DescribeDohSubDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohSubDomainStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4112,7 +4112,7 @@ func (client *Client) DescribeDohSubDomainStatisticsWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohSubDomainStatisticsSummaryResponse
-func (client *Client) DescribeDohSubDomainStatisticsSummaryWithContext(ctx context.Context, request *DescribeDohSubDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohSubDomainStatisticsSummaryResponse, _err error) {
+func DescribeDohSubDomainStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeDohSubDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohSubDomainStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4178,7 +4178,7 @@ func (client *Client) DescribeDohSubDomainStatisticsSummaryWithContext(ctx conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDohUserInfoResponse
-func (client *Client) DescribeDohUserInfoWithContext(ctx context.Context, request *DescribeDohUserInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohUserInfoResponse, _err error) {
+func DescribeDohUserInfoWithContext(ctx context.Context, client *Client, request *DescribeDohUserInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDohUserInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4228,7 +4228,7 @@ func (client *Client) DescribeDohUserInfoWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainDnssecInfoResponse
-func (client *Client) DescribeDomainDnssecInfoWithContext(ctx context.Context, request *DescribeDomainDnssecInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainDnssecInfoResponse, _err error) {
+func DescribeDomainDnssecInfoWithContext(ctx context.Context, client *Client, request *DescribeDomainDnssecInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainDnssecInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4274,7 +4274,7 @@ func (client *Client) DescribeDomainDnssecInfoWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainGroupsResponse
-func (client *Client) DescribeDomainGroupsWithContext(ctx context.Context, request *DescribeDomainGroupsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainGroupsResponse, _err error) {
+func DescribeDomainGroupsWithContext(ctx context.Context, client *Client, request *DescribeDomainGroupsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainGroupsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4332,7 +4332,7 @@ func (client *Client) DescribeDomainGroupsWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainInfoResponse
-func (client *Client) DescribeDomainInfoWithContext(ctx context.Context, request *DescribeDomainInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainInfoResponse, _err error) {
+func DescribeDomainInfoWithContext(ctx context.Context, client *Client, request *DescribeDomainInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4382,7 +4382,7 @@ func (client *Client) DescribeDomainInfoWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainLogsResponse
-func (client *Client) DescribeDomainLogsWithContext(ctx context.Context, request *DescribeDomainLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainLogsResponse, _err error) {
+func DescribeDomainLogsWithContext(ctx context.Context, client *Client, request *DescribeDomainLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4456,7 +4456,7 @@ func (client *Client) DescribeDomainLogsWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainNsResponse
-func (client *Client) DescribeDomainNsWithContext(ctx context.Context, request *DescribeDomainNsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainNsResponse, _err error) {
+func DescribeDomainNsWithContext(ctx context.Context, client *Client, request *DescribeDomainNsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainNsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4508,7 +4508,7 @@ func (client *Client) DescribeDomainNsWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainRecordInfoResponse
-func (client *Client) DescribeDomainRecordInfoWithContext(ctx context.Context, request *DescribeDomainRecordInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainRecordInfoResponse, _err error) {
+func DescribeDomainRecordInfoWithContext(ctx context.Context, client *Client, request *DescribeDomainRecordInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainRecordInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4568,7 +4568,7 @@ func (client *Client) DescribeDomainRecordInfoWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainRecordsResponse
-func (client *Client) DescribeDomainRecordsWithContext(ctx context.Context, request *DescribeDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainRecordsResponse, _err error) {
+func DescribeDomainRecordsWithContext(ctx context.Context, client *Client, request *DescribeDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainRecordsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4666,7 +4666,7 @@ func (client *Client) DescribeDomainRecordsWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainResolveStatisticsSummaryResponse
-func (client *Client) DescribeDomainResolveStatisticsSummaryWithContext(ctx context.Context, request *DescribeDomainResolveStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainResolveStatisticsSummaryResponse, _err error) {
+func DescribeDomainResolveStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeDomainResolveStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainResolveStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4744,7 +4744,7 @@ func (client *Client) DescribeDomainResolveStatisticsSummaryWithContext(ctx cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainStatisticsResponse
-func (client *Client) DescribeDomainStatisticsWithContext(ctx context.Context, request *DescribeDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainStatisticsResponse, _err error) {
+func DescribeDomainStatisticsWithContext(ctx context.Context, client *Client, request *DescribeDomainStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4802,7 +4802,7 @@ func (client *Client) DescribeDomainStatisticsWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainStatisticsSummaryResponse
-func (client *Client) DescribeDomainStatisticsSummaryWithContext(ctx context.Context, request *DescribeDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainStatisticsSummaryResponse, _err error) {
+func DescribeDomainStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeDomainStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4882,7 +4882,7 @@ func (client *Client) DescribeDomainStatisticsSummaryWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeDomainsResponse
-func (client *Client) DescribeDomainsWithContext(ctx context.Context, request *DescribeDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainsResponse, _err error) {
+func DescribeDomainsWithContext(ctx context.Context, client *Client, request *DescribeDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -4952,7 +4952,7 @@ func (client *Client) DescribeDomainsWithContext(ctx context.Context, request *D
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmAccessStrategiesResponse
-func (client *Client) DescribeGtmAccessStrategiesWithContext(ctx context.Context, request *DescribeGtmAccessStrategiesRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategiesResponse, _err error) {
+func DescribeGtmAccessStrategiesWithContext(ctx context.Context, client *Client, request *DescribeGtmAccessStrategiesRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategiesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5006,7 +5006,7 @@ func (client *Client) DescribeGtmAccessStrategiesWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmAccessStrategyResponse
-func (client *Client) DescribeGtmAccessStrategyWithContext(ctx context.Context, request *DescribeGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategyResponse, _err error) {
+func DescribeGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *DescribeGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5052,7 +5052,7 @@ func (client *Client) DescribeGtmAccessStrategyWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmAccessStrategyAvailableConfigResponse
-func (client *Client) DescribeGtmAccessStrategyAvailableConfigWithContext(ctx context.Context, request *DescribeGtmAccessStrategyAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategyAvailableConfigResponse, _err error) {
+func DescribeGtmAccessStrategyAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeGtmAccessStrategyAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAccessStrategyAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5094,7 +5094,7 @@ func (client *Client) DescribeGtmAccessStrategyAvailableConfigWithContext(ctx co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmAvailableAlertGroupResponse
-func (client *Client) DescribeGtmAvailableAlertGroupWithContext(ctx context.Context, request *DescribeGtmAvailableAlertGroupRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAvailableAlertGroupResponse, _err error) {
+func DescribeGtmAvailableAlertGroupWithContext(ctx context.Context, client *Client, request *DescribeGtmAvailableAlertGroupRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmAvailableAlertGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5136,7 +5136,7 @@ func (client *Client) DescribeGtmAvailableAlertGroupWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstanceResponse
-func (client *Client) DescribeGtmInstanceWithContext(ctx context.Context, request *DescribeGtmInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceResponse, _err error) {
+func DescribeGtmInstanceWithContext(ctx context.Context, client *Client, request *DescribeGtmInstanceRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5186,7 +5186,7 @@ func (client *Client) DescribeGtmInstanceWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstanceAddressPoolResponse
-func (client *Client) DescribeGtmInstanceAddressPoolWithContext(ctx context.Context, request *DescribeGtmInstanceAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceAddressPoolResponse, _err error) {
+func DescribeGtmInstanceAddressPoolWithContext(ctx context.Context, client *Client, request *DescribeGtmInstanceAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5232,7 +5232,7 @@ func (client *Client) DescribeGtmInstanceAddressPoolWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstanceAddressPoolsResponse
-func (client *Client) DescribeGtmInstanceAddressPoolsWithContext(ctx context.Context, request *DescribeGtmInstanceAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceAddressPoolsResponse, _err error) {
+func DescribeGtmInstanceAddressPoolsWithContext(ctx context.Context, client *Client, request *DescribeGtmInstanceAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceAddressPoolsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5286,7 +5286,7 @@ func (client *Client) DescribeGtmInstanceAddressPoolsWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstanceStatusResponse
-func (client *Client) DescribeGtmInstanceStatusWithContext(ctx context.Context, request *DescribeGtmInstanceStatusRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceStatusResponse, _err error) {
+func DescribeGtmInstanceStatusWithContext(ctx context.Context, client *Client, request *DescribeGtmInstanceStatusRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5328,7 +5328,7 @@ func (client *Client) DescribeGtmInstanceStatusWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstanceSystemCnameResponse
-func (client *Client) DescribeGtmInstanceSystemCnameWithContext(ctx context.Context, request *DescribeGtmInstanceSystemCnameRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceSystemCnameResponse, _err error) {
+func DescribeGtmInstanceSystemCnameWithContext(ctx context.Context, client *Client, request *DescribeGtmInstanceSystemCnameRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstanceSystemCnameResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5374,7 +5374,7 @@ func (client *Client) DescribeGtmInstanceSystemCnameWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmInstancesResponse
-func (client *Client) DescribeGtmInstancesWithContext(ctx context.Context, request *DescribeGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstancesResponse, _err error) {
+func DescribeGtmInstancesWithContext(ctx context.Context, client *Client, request *DescribeGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5436,7 +5436,7 @@ func (client *Client) DescribeGtmInstancesWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmLogsResponse
-func (client *Client) DescribeGtmLogsWithContext(ctx context.Context, request *DescribeGtmLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmLogsResponse, _err error) {
+func DescribeGtmLogsWithContext(ctx context.Context, client *Client, request *DescribeGtmLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5502,7 +5502,7 @@ func (client *Client) DescribeGtmLogsWithContext(ctx context.Context, request *D
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmMonitorAvailableConfigResponse
-func (client *Client) DescribeGtmMonitorAvailableConfigWithContext(ctx context.Context, request *DescribeGtmMonitorAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmMonitorAvailableConfigResponse, _err error) {
+func DescribeGtmMonitorAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeGtmMonitorAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmMonitorAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5544,7 +5544,7 @@ func (client *Client) DescribeGtmMonitorAvailableConfigWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmMonitorConfigResponse
-func (client *Client) DescribeGtmMonitorConfigWithContext(ctx context.Context, request *DescribeGtmMonitorConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmMonitorConfigResponse, _err error) {
+func DescribeGtmMonitorConfigWithContext(ctx context.Context, client *Client, request *DescribeGtmMonitorConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmMonitorConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5590,7 +5590,7 @@ func (client *Client) DescribeGtmMonitorConfigWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmRecoveryPlanResponse
-func (client *Client) DescribeGtmRecoveryPlanWithContext(ctx context.Context, request *DescribeGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlanResponse, _err error) {
+func DescribeGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *DescribeGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5636,7 +5636,7 @@ func (client *Client) DescribeGtmRecoveryPlanWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmRecoveryPlanAvailableConfigResponse
-func (client *Client) DescribeGtmRecoveryPlanAvailableConfigWithContext(ctx context.Context, request *DescribeGtmRecoveryPlanAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlanAvailableConfigResponse, _err error) {
+func DescribeGtmRecoveryPlanAvailableConfigWithContext(ctx context.Context, client *Client, request *DescribeGtmRecoveryPlanAvailableConfigRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlanAvailableConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5678,7 +5678,7 @@ func (client *Client) DescribeGtmRecoveryPlanAvailableConfigWithContext(ctx cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeGtmRecoveryPlansResponse
-func (client *Client) DescribeGtmRecoveryPlansWithContext(ctx context.Context, request *DescribeGtmRecoveryPlansRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlansResponse, _err error) {
+func DescribeGtmRecoveryPlansWithContext(ctx context.Context, client *Client, request *DescribeGtmRecoveryPlansRequest, runtime *dara.RuntimeOptions) (_result *DescribeGtmRecoveryPlansResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5732,7 +5732,7 @@ func (client *Client) DescribeGtmRecoveryPlansWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeInstanceDomainsResponse
-func (client *Client) DescribeInstanceDomainsWithContext(ctx context.Context, request *DescribeInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeInstanceDomainsResponse, _err error) {
+func DescribeInstanceDomainsWithContext(ctx context.Context, client *Client, request *DescribeInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeInstanceDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5786,7 +5786,7 @@ func (client *Client) DescribeInstanceDomainsWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeInternetDnsLogsResponse
-func (client *Client) DescribeInternetDnsLogsWithContext(ctx context.Context, request *DescribeInternetDnsLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeInternetDnsLogsResponse, _err error) {
+func DescribeInternetDnsLogsWithContext(ctx context.Context, client *Client, request *DescribeInternetDnsLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeInternetDnsLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5864,7 +5864,7 @@ func (client *Client) DescribeInternetDnsLogsWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeIspFlushCacheInstancesResponse
-func (client *Client) DescribeIspFlushCacheInstancesWithContext(ctx context.Context, request *DescribeIspFlushCacheInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheInstancesResponse, _err error) {
+func DescribeIspFlushCacheInstancesWithContext(ctx context.Context, client *Client, request *DescribeIspFlushCacheInstancesRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5934,7 +5934,7 @@ func (client *Client) DescribeIspFlushCacheInstancesWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeIspFlushCacheRemainQuotaResponse
-func (client *Client) DescribeIspFlushCacheRemainQuotaWithContext(ctx context.Context, request *DescribeIspFlushCacheRemainQuotaRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheRemainQuotaResponse, _err error) {
+func DescribeIspFlushCacheRemainQuotaWithContext(ctx context.Context, client *Client, request *DescribeIspFlushCacheRemainQuotaRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheRemainQuotaResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -5976,7 +5976,7 @@ func (client *Client) DescribeIspFlushCacheRemainQuotaWithContext(ctx context.Co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeIspFlushCacheTaskResponse
-func (client *Client) DescribeIspFlushCacheTaskWithContext(ctx context.Context, request *DescribeIspFlushCacheTaskRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheTaskResponse, _err error) {
+func DescribeIspFlushCacheTaskWithContext(ctx context.Context, client *Client, request *DescribeIspFlushCacheTaskRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheTaskResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6022,7 +6022,7 @@ func (client *Client) DescribeIspFlushCacheTaskWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeIspFlushCacheTasksResponse
-func (client *Client) DescribeIspFlushCacheTasksWithContext(ctx context.Context, request *DescribeIspFlushCacheTasksRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheTasksResponse, _err error) {
+func DescribeIspFlushCacheTasksWithContext(ctx context.Context, client *Client, request *DescribeIspFlushCacheTasksRequest, runtime *dara.RuntimeOptions) (_result *DescribeIspFlushCacheTasksResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6092,7 +6092,7 @@ func (client *Client) DescribeIspFlushCacheTasksWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsAccountSummaryResponse
-func (client *Client) DescribePdnsAccountSummaryWithContext(ctx context.Context, request *DescribePdnsAccountSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAccountSummaryResponse, _err error) {
+func DescribePdnsAccountSummaryWithContext(ctx context.Context, client *Client, request *DescribePdnsAccountSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAccountSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6142,7 +6142,7 @@ func (client *Client) DescribePdnsAccountSummaryWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsAppKeyResponse
-func (client *Client) DescribePdnsAppKeyWithContext(ctx context.Context, request *DescribePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAppKeyResponse, _err error) {
+func DescribePdnsAppKeyWithContext(ctx context.Context, client *Client, request *DescribePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAppKeyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6192,7 +6192,7 @@ func (client *Client) DescribePdnsAppKeyWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsAppKeysResponse
-func (client *Client) DescribePdnsAppKeysWithContext(ctx context.Context, request *DescribePdnsAppKeysRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAppKeysResponse, _err error) {
+func DescribePdnsAppKeysWithContext(ctx context.Context, client *Client, request *DescribePdnsAppKeysRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsAppKeysResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6234,7 +6234,7 @@ func (client *Client) DescribePdnsAppKeysWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsOperateLogsResponse
-func (client *Client) DescribePdnsOperateLogsWithContext(ctx context.Context, request *DescribePdnsOperateLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsOperateLogsResponse, _err error) {
+func DescribePdnsOperateLogsWithContext(ctx context.Context, client *Client, request *DescribePdnsOperateLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsOperateLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6304,7 +6304,7 @@ func (client *Client) DescribePdnsOperateLogsWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsRequestStatisticResponse
-func (client *Client) DescribePdnsRequestStatisticWithContext(ctx context.Context, request *DescribePdnsRequestStatisticRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsRequestStatisticResponse, _err error) {
+func DescribePdnsRequestStatisticWithContext(ctx context.Context, client *Client, request *DescribePdnsRequestStatisticRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsRequestStatisticResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6366,7 +6366,7 @@ func (client *Client) DescribePdnsRequestStatisticWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsRequestStatisticsResponse
-func (client *Client) DescribePdnsRequestStatisticsWithContext(ctx context.Context, request *DescribePdnsRequestStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsRequestStatisticsResponse, _err error) {
+func DescribePdnsRequestStatisticsWithContext(ctx context.Context, client *Client, request *DescribePdnsRequestStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsRequestStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6436,7 +6436,7 @@ func (client *Client) DescribePdnsRequestStatisticsWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsThreatLogsResponse
-func (client *Client) DescribePdnsThreatLogsWithContext(ctx context.Context, request *DescribePdnsThreatLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatLogsResponse, _err error) {
+func DescribePdnsThreatLogsWithContext(ctx context.Context, client *Client, request *DescribePdnsThreatLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6510,7 +6510,7 @@ func (client *Client) DescribePdnsThreatLogsWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsThreatStatisticResponse
-func (client *Client) DescribePdnsThreatStatisticWithContext(ctx context.Context, request *DescribePdnsThreatStatisticRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatStatisticResponse, _err error) {
+func DescribePdnsThreatStatisticWithContext(ctx context.Context, client *Client, request *DescribePdnsThreatStatisticRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatStatisticResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6564,7 +6564,7 @@ func (client *Client) DescribePdnsThreatStatisticWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsThreatStatisticsResponse
-func (client *Client) DescribePdnsThreatStatisticsWithContext(ctx context.Context, request *DescribePdnsThreatStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatStatisticsResponse, _err error) {
+func DescribePdnsThreatStatisticsWithContext(ctx context.Context, client *Client, request *DescribePdnsThreatStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsThreatStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6654,7 +6654,7 @@ func (client *Client) DescribePdnsThreatStatisticsWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsUdpIpSegmentsResponse
-func (client *Client) DescribePdnsUdpIpSegmentsWithContext(ctx context.Context, request *DescribePdnsUdpIpSegmentsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsUdpIpSegmentsResponse, _err error) {
+func DescribePdnsUdpIpSegmentsWithContext(ctx context.Context, client *Client, request *DescribePdnsUdpIpSegmentsRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsUdpIpSegmentsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6704,7 +6704,7 @@ func (client *Client) DescribePdnsUdpIpSegmentsWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribePdnsUserInfoResponse
-func (client *Client) DescribePdnsUserInfoWithContext(ctx context.Context, request *DescribePdnsUserInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsUserInfoResponse, _err error) {
+func DescribePdnsUserInfoWithContext(ctx context.Context, client *Client, request *DescribePdnsUserInfoRequest, runtime *dara.RuntimeOptions) (_result *DescribePdnsUserInfoResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6746,7 +6746,7 @@ func (client *Client) DescribePdnsUserInfoWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeRecordLogsResponse
-func (client *Client) DescribeRecordLogsWithContext(ctx context.Context, request *DescribeRecordLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordLogsResponse, _err error) {
+func DescribeRecordLogsWithContext(ctx context.Context, client *Client, request *DescribeRecordLogsRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6816,7 +6816,7 @@ func (client *Client) DescribeRecordLogsWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeRecordResolveStatisticsSummaryResponse
-func (client *Client) DescribeRecordResolveStatisticsSummaryWithContext(ctx context.Context, request *DescribeRecordResolveStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordResolveStatisticsSummaryResponse, _err error) {
+func DescribeRecordResolveStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeRecordResolveStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordResolveStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6902,7 +6902,7 @@ func (client *Client) DescribeRecordResolveStatisticsSummaryWithContext(ctx cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeRecordStatisticsResponse
-func (client *Client) DescribeRecordStatisticsWithContext(ctx context.Context, request *DescribeRecordStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordStatisticsResponse, _err error) {
+func DescribeRecordStatisticsWithContext(ctx context.Context, client *Client, request *DescribeRecordStatisticsRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordStatisticsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -6964,7 +6964,7 @@ func (client *Client) DescribeRecordStatisticsWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeRecordStatisticsSummaryResponse
-func (client *Client) DescribeRecordStatisticsSummaryWithContext(ctx context.Context, request *DescribeRecordStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordStatisticsSummaryResponse, _err error) {
+func DescribeRecordStatisticsSummaryWithContext(ctx context.Context, client *Client, request *DescribeRecordStatisticsSummaryRequest, runtime *dara.RuntimeOptions) (_result *DescribeRecordStatisticsSummaryResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7042,7 +7042,7 @@ func (client *Client) DescribeRecordStatisticsSummaryWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeSubDomainRecordsResponse
-func (client *Client) DescribeSubDomainRecordsWithContext(ctx context.Context, request *DescribeSubDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DescribeSubDomainRecordsResponse, _err error) {
+func DescribeSubDomainRecordsWithContext(ctx context.Context, client *Client, request *DescribeSubDomainRecordsRequest, runtime *dara.RuntimeOptions) (_result *DescribeSubDomainRecordsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7112,7 +7112,7 @@ func (client *Client) DescribeSubDomainRecordsWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeSupportLinesResponse
-func (client *Client) DescribeSupportLinesWithContext(ctx context.Context, request *DescribeSupportLinesRequest, runtime *dara.RuntimeOptions) (_result *DescribeSupportLinesResponse, _err error) {
+func DescribeSupportLinesWithContext(ctx context.Context, client *Client, request *DescribeSupportLinesRequest, runtime *dara.RuntimeOptions) (_result *DescribeSupportLinesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7162,7 +7162,7 @@ func (client *Client) DescribeSupportLinesWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeTagsResponse
-func (client *Client) DescribeTagsWithContext(ctx context.Context, request *DescribeTagsRequest, runtime *dara.RuntimeOptions) (_result *DescribeTagsResponse, _err error) {
+func DescribeTagsWithContext(ctx context.Context, client *Client, request *DescribeTagsRequest, runtime *dara.RuntimeOptions) (_result *DescribeTagsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7216,7 +7216,7 @@ func (client *Client) DescribeTagsWithContext(ctx context.Context, request *Desc
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return DescribeTransferDomainsResponse
-func (client *Client) DescribeTransferDomainsWithContext(ctx context.Context, request *DescribeTransferDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeTransferDomainsResponse, _err error) {
+func DescribeTransferDomainsWithContext(ctx context.Context, client *Client, request *DescribeTransferDomainsRequest, runtime *dara.RuntimeOptions) (_result *DescribeTransferDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7282,7 +7282,7 @@ func (client *Client) DescribeTransferDomainsWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ExecuteGtmRecoveryPlanResponse
-func (client *Client) ExecuteGtmRecoveryPlanWithContext(ctx context.Context, request *ExecuteGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *ExecuteGtmRecoveryPlanResponse, _err error) {
+func ExecuteGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *ExecuteGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *ExecuteGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7334,7 +7334,7 @@ func (client *Client) ExecuteGtmRecoveryPlanWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return GetMainDomainNameResponse
-func (client *Client) GetMainDomainNameWithContext(ctx context.Context, request *GetMainDomainNameRequest, runtime *dara.RuntimeOptions) (_result *GetMainDomainNameResponse, _err error) {
+func GetMainDomainNameWithContext(ctx context.Context, client *Client, request *GetMainDomainNameRequest, runtime *dara.RuntimeOptions) (_result *GetMainDomainNameResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7380,7 +7380,7 @@ func (client *Client) GetMainDomainNameWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return GetTxtRecordForVerifyResponse
-func (client *Client) GetTxtRecordForVerifyWithContext(ctx context.Context, request *GetTxtRecordForVerifyRequest, runtime *dara.RuntimeOptions) (_result *GetTxtRecordForVerifyResponse, _err error) {
+func GetTxtRecordForVerifyWithContext(ctx context.Context, client *Client, request *GetTxtRecordForVerifyRequest, runtime *dara.RuntimeOptions) (_result *GetTxtRecordForVerifyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7430,7 +7430,7 @@ func (client *Client) GetTxtRecordForVerifyWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmAddressPoolsResponse
-func (client *Client) ListCloudGtmAddressPoolsWithContext(ctx context.Context, request *ListCloudGtmAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAddressPoolsResponse, _err error) {
+func ListCloudGtmAddressPoolsWithContext(ctx context.Context, client *Client, request *ListCloudGtmAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAddressPoolsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7500,7 +7500,7 @@ func (client *Client) ListCloudGtmAddressPoolsWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmAddressesResponse
-func (client *Client) ListCloudGtmAddressesWithContext(ctx context.Context, request *ListCloudGtmAddressesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAddressesResponse, _err error) {
+func ListCloudGtmAddressesWithContext(ctx context.Context, client *Client, request *ListCloudGtmAddressesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAddressesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7578,7 +7578,7 @@ func (client *Client) ListCloudGtmAddressesWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmAlertLogsResponse
-func (client *Client) ListCloudGtmAlertLogsWithContext(ctx context.Context, request *ListCloudGtmAlertLogsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAlertLogsResponse, _err error) {
+func ListCloudGtmAlertLogsWithContext(ctx context.Context, client *Client, request *ListCloudGtmAlertLogsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAlertLogsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7644,7 +7644,7 @@ func (client *Client) ListCloudGtmAlertLogsWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmAvailableAlertGroupsResponse
-func (client *Client) ListCloudGtmAvailableAlertGroupsWithContext(ctx context.Context, request *ListCloudGtmAvailableAlertGroupsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAvailableAlertGroupsResponse, _err error) {
+func ListCloudGtmAvailableAlertGroupsWithContext(ctx context.Context, client *Client, request *ListCloudGtmAvailableAlertGroupsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmAvailableAlertGroupsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7686,7 +7686,7 @@ func (client *Client) ListCloudGtmAvailableAlertGroupsWithContext(ctx context.Co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmInstanceConfigsResponse
-func (client *Client) ListCloudGtmInstanceConfigsWithContext(ctx context.Context, request *ListCloudGtmInstanceConfigsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmInstanceConfigsResponse, _err error) {
+func ListCloudGtmInstanceConfigsWithContext(ctx context.Context, client *Client, request *ListCloudGtmInstanceConfigsRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmInstanceConfigsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7760,7 +7760,7 @@ func (client *Client) ListCloudGtmInstanceConfigsWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmInstancesResponse
-func (client *Client) ListCloudGtmInstancesWithContext(ctx context.Context, request *ListCloudGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmInstancesResponse, _err error) {
+func ListCloudGtmInstancesWithContext(ctx context.Context, client *Client, request *ListCloudGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7822,7 +7822,7 @@ func (client *Client) ListCloudGtmInstancesWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmMonitorNodesResponse
-func (client *Client) ListCloudGtmMonitorNodesWithContext(ctx context.Context, request *ListCloudGtmMonitorNodesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmMonitorNodesResponse, _err error) {
+func ListCloudGtmMonitorNodesWithContext(ctx context.Context, client *Client, request *ListCloudGtmMonitorNodesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmMonitorNodesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7864,7 +7864,7 @@ func (client *Client) ListCloudGtmMonitorNodesWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListCloudGtmMonitorTemplatesResponse
-func (client *Client) ListCloudGtmMonitorTemplatesWithContext(ctx context.Context, request *ListCloudGtmMonitorTemplatesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmMonitorTemplatesResponse, _err error) {
+func ListCloudGtmMonitorTemplatesWithContext(ctx context.Context, client *Client, request *ListCloudGtmMonitorTemplatesRequest, runtime *dara.RuntimeOptions) (_result *ListCloudGtmMonitorTemplatesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -7936,7 +7936,7 @@ func (client *Client) ListCloudGtmMonitorTemplatesWithContext(ctx context.Contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ListTagResourcesResponse
-func (client *Client) ListTagResourcesWithContext(ctx context.Context, request *ListTagResourcesRequest, runtime *dara.RuntimeOptions) (_result *ListTagResourcesResponse, _err error) {
+func ListTagResourcesWithContext(ctx context.Context, client *Client, request *ListTagResourcesRequest, runtime *dara.RuntimeOptions) (_result *ListTagResourcesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8000,7 +8000,7 @@ func (client *Client) ListTagResourcesWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ModifyHichinaDomainDNSResponse
-func (client *Client) ModifyHichinaDomainDNSWithContext(ctx context.Context, request *ModifyHichinaDomainDNSRequest, runtime *dara.RuntimeOptions) (_result *ModifyHichinaDomainDNSResponse, _err error) {
+func ModifyHichinaDomainDNSWithContext(ctx context.Context, client *Client, request *ModifyHichinaDomainDNSRequest, runtime *dara.RuntimeOptions) (_result *ModifyHichinaDomainDNSResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8050,7 +8050,7 @@ func (client *Client) ModifyHichinaDomainDNSWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return MoveDomainResourceGroupResponse
-func (client *Client) MoveDomainResourceGroupWithContext(ctx context.Context, request *MoveDomainResourceGroupRequest, runtime *dara.RuntimeOptions) (_result *MoveDomainResourceGroupResponse, _err error) {
+func MoveDomainResourceGroupWithContext(ctx context.Context, client *Client, request *MoveDomainResourceGroupRequest, runtime *dara.RuntimeOptions) (_result *MoveDomainResourceGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8096,7 +8096,7 @@ func (client *Client) MoveDomainResourceGroupWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return MoveGtmResourceGroupResponse
-func (client *Client) MoveGtmResourceGroupWithContext(ctx context.Context, request *MoveGtmResourceGroupRequest, runtime *dara.RuntimeOptions) (_result *MoveGtmResourceGroupResponse, _err error) {
+func MoveGtmResourceGroupWithContext(ctx context.Context, client *Client, request *MoveGtmResourceGroupRequest, runtime *dara.RuntimeOptions) (_result *MoveGtmResourceGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8150,7 +8150,7 @@ func (client *Client) MoveGtmResourceGroupWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return OperateBatchDomainResponse
-func (client *Client) OperateBatchDomainWithContext(ctx context.Context, request *OperateBatchDomainRequest, runtime *dara.RuntimeOptions) (_result *OperateBatchDomainResponse, _err error) {
+func OperateBatchDomainWithContext(ctx context.Context, client *Client, request *OperateBatchDomainRequest, runtime *dara.RuntimeOptions) (_result *OperateBatchDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8200,7 +8200,7 @@ func (client *Client) OperateBatchDomainWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return PausePdnsServiceResponse
-func (client *Client) PausePdnsServiceWithContext(ctx context.Context, request *PausePdnsServiceRequest, runtime *dara.RuntimeOptions) (_result *PausePdnsServiceResponse, _err error) {
+func PausePdnsServiceWithContext(ctx context.Context, client *Client, request *PausePdnsServiceRequest, runtime *dara.RuntimeOptions) (_result *PausePdnsServiceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8246,7 +8246,7 @@ func (client *Client) PausePdnsServiceWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return PreviewGtmRecoveryPlanResponse
-func (client *Client) PreviewGtmRecoveryPlanWithContext(ctx context.Context, request *PreviewGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *PreviewGtmRecoveryPlanResponse, _err error) {
+func PreviewGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *PreviewGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *PreviewGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8300,7 +8300,7 @@ func (client *Client) PreviewGtmRecoveryPlanWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return RemovePdnsAppKeyResponse
-func (client *Client) RemovePdnsAppKeyWithContext(ctx context.Context, request *RemovePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *RemovePdnsAppKeyResponse, _err error) {
+func RemovePdnsAppKeyWithContext(ctx context.Context, client *Client, request *RemovePdnsAppKeyRequest, runtime *dara.RuntimeOptions) (_result *RemovePdnsAppKeyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8346,7 +8346,7 @@ func (client *Client) RemovePdnsAppKeyWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return RemovePdnsUdpIpSegmentResponse
-func (client *Client) RemovePdnsUdpIpSegmentWithContext(ctx context.Context, request *RemovePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *RemovePdnsUdpIpSegmentResponse, _err error) {
+func RemovePdnsUdpIpSegmentWithContext(ctx context.Context, client *Client, request *RemovePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *RemovePdnsUdpIpSegmentResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8392,7 +8392,7 @@ func (client *Client) RemovePdnsUdpIpSegmentWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ReplaceCloudGtmAddressPoolAddressResponse
-func (client *Client) ReplaceCloudGtmAddressPoolAddressWithContext(ctx context.Context, tmpReq *ReplaceCloudGtmAddressPoolAddressRequest, runtime *dara.RuntimeOptions) (_result *ReplaceCloudGtmAddressPoolAddressResponse, _err error) {
+func ReplaceCloudGtmAddressPoolAddressWithContext(ctx context.Context, client *Client, tmpReq *ReplaceCloudGtmAddressPoolAddressRequest, runtime *dara.RuntimeOptions) (_result *ReplaceCloudGtmAddressPoolAddressResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8452,7 +8452,7 @@ func (client *Client) ReplaceCloudGtmAddressPoolAddressWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ReplaceCloudGtmInstanceConfigAddressPoolResponse
-func (client *Client) ReplaceCloudGtmInstanceConfigAddressPoolWithContext(ctx context.Context, tmpReq *ReplaceCloudGtmInstanceConfigAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *ReplaceCloudGtmInstanceConfigAddressPoolResponse, _err error) {
+func ReplaceCloudGtmInstanceConfigAddressPoolWithContext(ctx context.Context, client *Client, tmpReq *ReplaceCloudGtmInstanceConfigAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *ReplaceCloudGtmInstanceConfigAddressPoolResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8516,7 +8516,7 @@ func (client *Client) ReplaceCloudGtmInstanceConfigAddressPoolWithContext(ctx co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ResumePdnsServiceResponse
-func (client *Client) ResumePdnsServiceWithContext(ctx context.Context, request *ResumePdnsServiceRequest, runtime *dara.RuntimeOptions) (_result *ResumePdnsServiceResponse, _err error) {
+func ResumePdnsServiceWithContext(ctx context.Context, client *Client, request *ResumePdnsServiceRequest, runtime *dara.RuntimeOptions) (_result *ResumePdnsServiceResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8566,7 +8566,7 @@ func (client *Client) ResumePdnsServiceWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return RetrieveDomainResponse
-func (client *Client) RetrieveDomainWithContext(ctx context.Context, request *RetrieveDomainRequest, runtime *dara.RuntimeOptions) (_result *RetrieveDomainResponse, _err error) {
+func RetrieveDomainWithContext(ctx context.Context, client *Client, request *RetrieveDomainRequest, runtime *dara.RuntimeOptions) (_result *RetrieveDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8612,7 +8612,7 @@ func (client *Client) RetrieveDomainWithContext(ctx context.Context, request *Re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return RollbackGtmRecoveryPlanResponse
-func (client *Client) RollbackGtmRecoveryPlanWithContext(ctx context.Context, request *RollbackGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *RollbackGtmRecoveryPlanResponse, _err error) {
+func RollbackGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *RollbackGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *RollbackGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8658,7 +8658,7 @@ func (client *Client) RollbackGtmRecoveryPlanWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SearchCloudGtmAddressPoolsResponse
-func (client *Client) SearchCloudGtmAddressPoolsWithContext(ctx context.Context, request *SearchCloudGtmAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmAddressPoolsResponse, _err error) {
+func SearchCloudGtmAddressPoolsWithContext(ctx context.Context, client *Client, request *SearchCloudGtmAddressPoolsRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmAddressPoolsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8736,7 +8736,7 @@ func (client *Client) SearchCloudGtmAddressPoolsWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SearchCloudGtmAddressesResponse
-func (client *Client) SearchCloudGtmAddressesWithContext(ctx context.Context, request *SearchCloudGtmAddressesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmAddressesResponse, _err error) {
+func SearchCloudGtmAddressesWithContext(ctx context.Context, client *Client, request *SearchCloudGtmAddressesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmAddressesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8830,7 +8830,7 @@ func (client *Client) SearchCloudGtmAddressesWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SearchCloudGtmInstanceConfigsResponse
-func (client *Client) SearchCloudGtmInstanceConfigsWithContext(ctx context.Context, request *SearchCloudGtmInstanceConfigsRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmInstanceConfigsResponse, _err error) {
+func SearchCloudGtmInstanceConfigsWithContext(ctx context.Context, client *Client, request *SearchCloudGtmInstanceConfigsRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmInstanceConfigsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8912,7 +8912,7 @@ func (client *Client) SearchCloudGtmInstanceConfigsWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SearchCloudGtmInstancesResponse
-func (client *Client) SearchCloudGtmInstancesWithContext(ctx context.Context, request *SearchCloudGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmInstancesResponse, _err error) {
+func SearchCloudGtmInstancesWithContext(ctx context.Context, client *Client, request *SearchCloudGtmInstancesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmInstancesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -8974,7 +8974,7 @@ func (client *Client) SearchCloudGtmInstancesWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SearchCloudGtmMonitorTemplatesResponse
-func (client *Client) SearchCloudGtmMonitorTemplatesWithContext(ctx context.Context, request *SearchCloudGtmMonitorTemplatesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmMonitorTemplatesResponse, _err error) {
+func SearchCloudGtmMonitorTemplatesWithContext(ctx context.Context, client *Client, request *SearchCloudGtmMonitorTemplatesRequest, runtime *dara.RuntimeOptions) (_result *SearchCloudGtmMonitorTemplatesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9036,7 +9036,7 @@ func (client *Client) SearchCloudGtmMonitorTemplatesWithContext(ctx context.Cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetDNSSLBStatusResponse
-func (client *Client) SetDNSSLBStatusWithContext(ctx context.Context, request *SetDNSSLBStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDNSSLBStatusResponse, _err error) {
+func SetDNSSLBStatusWithContext(ctx context.Context, client *Client, request *SetDNSSLBStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDNSSLBStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9106,7 +9106,7 @@ func (client *Client) SetDNSSLBStatusWithContext(ctx context.Context, request *S
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetDnsGtmAccessModeResponse
-func (client *Client) SetDnsGtmAccessModeWithContext(ctx context.Context, request *SetDnsGtmAccessModeRequest, runtime *dara.RuntimeOptions) (_result *SetDnsGtmAccessModeResponse, _err error) {
+func SetDnsGtmAccessModeWithContext(ctx context.Context, client *Client, request *SetDnsGtmAccessModeRequest, runtime *dara.RuntimeOptions) (_result *SetDnsGtmAccessModeResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9156,7 +9156,7 @@ func (client *Client) SetDnsGtmAccessModeWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetDnsGtmMonitorStatusResponse
-func (client *Client) SetDnsGtmMonitorStatusWithContext(ctx context.Context, request *SetDnsGtmMonitorStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDnsGtmMonitorStatusResponse, _err error) {
+func SetDnsGtmMonitorStatusWithContext(ctx context.Context, client *Client, request *SetDnsGtmMonitorStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDnsGtmMonitorStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9206,7 +9206,7 @@ func (client *Client) SetDnsGtmMonitorStatusWithContext(ctx context.Context, req
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetDomainDnssecStatusResponse
-func (client *Client) SetDomainDnssecStatusWithContext(ctx context.Context, request *SetDomainDnssecStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDomainDnssecStatusResponse, _err error) {
+func SetDomainDnssecStatusWithContext(ctx context.Context, client *Client, request *SetDomainDnssecStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDomainDnssecStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9256,7 +9256,7 @@ func (client *Client) SetDomainDnssecStatusWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetDomainRecordStatusResponse
-func (client *Client) SetDomainRecordStatusWithContext(ctx context.Context, request *SetDomainRecordStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDomainRecordStatusResponse, _err error) {
+func SetDomainRecordStatusWithContext(ctx context.Context, client *Client, request *SetDomainRecordStatusRequest, runtime *dara.RuntimeOptions) (_result *SetDomainRecordStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9310,7 +9310,7 @@ func (client *Client) SetDomainRecordStatusWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetGtmAccessModeResponse
-func (client *Client) SetGtmAccessModeWithContext(ctx context.Context, request *SetGtmAccessModeRequest, runtime *dara.RuntimeOptions) (_result *SetGtmAccessModeResponse, _err error) {
+func SetGtmAccessModeWithContext(ctx context.Context, client *Client, request *SetGtmAccessModeRequest, runtime *dara.RuntimeOptions) (_result *SetGtmAccessModeResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9356,7 +9356,7 @@ func (client *Client) SetGtmAccessModeWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SetGtmMonitorStatusResponse
-func (client *Client) SetGtmMonitorStatusWithContext(ctx context.Context, request *SetGtmMonitorStatusRequest, runtime *dara.RuntimeOptions) (_result *SetGtmMonitorStatusResponse, _err error) {
+func SetGtmMonitorStatusWithContext(ctx context.Context, client *Client, request *SetGtmMonitorStatusRequest, runtime *dara.RuntimeOptions) (_result *SetGtmMonitorStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9406,7 +9406,7 @@ func (client *Client) SetGtmMonitorStatusWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SubmitIspFlushCacheTaskResponse
-func (client *Client) SubmitIspFlushCacheTaskWithContext(ctx context.Context, request *SubmitIspFlushCacheTaskRequest, runtime *dara.RuntimeOptions) (_result *SubmitIspFlushCacheTaskResponse, _err error) {
+func SubmitIspFlushCacheTaskWithContext(ctx context.Context, client *Client, request *SubmitIspFlushCacheTaskRequest, runtime *dara.RuntimeOptions) (_result *SubmitIspFlushCacheTaskResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9460,7 +9460,7 @@ func (client *Client) SubmitIspFlushCacheTaskWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return SwitchDnsGtmInstanceStrategyModeResponse
-func (client *Client) SwitchDnsGtmInstanceStrategyModeWithContext(ctx context.Context, request *SwitchDnsGtmInstanceStrategyModeRequest, runtime *dara.RuntimeOptions) (_result *SwitchDnsGtmInstanceStrategyModeResponse, _err error) {
+func SwitchDnsGtmInstanceStrategyModeWithContext(ctx context.Context, client *Client, request *SwitchDnsGtmInstanceStrategyModeRequest, runtime *dara.RuntimeOptions) (_result *SwitchDnsGtmInstanceStrategyModeResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9510,7 +9510,7 @@ func (client *Client) SwitchDnsGtmInstanceStrategyModeWithContext(ctx context.Co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return TagResourcesResponse
-func (client *Client) TagResourcesWithContext(ctx context.Context, request *TagResourcesRequest, runtime *dara.RuntimeOptions) (_result *TagResourcesResponse, _err error) {
+func TagResourcesWithContext(ctx context.Context, client *Client, request *TagResourcesRequest, runtime *dara.RuntimeOptions) (_result *TagResourcesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9564,7 +9564,7 @@ func (client *Client) TagResourcesWithContext(ctx context.Context, request *TagR
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return TransferDomainResponse
-func (client *Client) TransferDomainWithContext(ctx context.Context, request *TransferDomainRequest, runtime *dara.RuntimeOptions) (_result *TransferDomainResponse, _err error) {
+func TransferDomainWithContext(ctx context.Context, client *Client, request *TransferDomainRequest, runtime *dara.RuntimeOptions) (_result *TransferDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9624,7 +9624,7 @@ func (client *Client) TransferDomainWithContext(ctx context.Context, request *Tr
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UnbindInstanceDomainsResponse
-func (client *Client) UnbindInstanceDomainsWithContext(ctx context.Context, request *UnbindInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *UnbindInstanceDomainsResponse, _err error) {
+func UnbindInstanceDomainsWithContext(ctx context.Context, client *Client, request *UnbindInstanceDomainsRequest, runtime *dara.RuntimeOptions) (_result *UnbindInstanceDomainsResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9674,7 +9674,7 @@ func (client *Client) UnbindInstanceDomainsWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UntagResourcesResponse
-func (client *Client) UntagResourcesWithContext(ctx context.Context, request *UntagResourcesRequest, runtime *dara.RuntimeOptions) (_result *UntagResourcesResponse, _err error) {
+func UntagResourcesWithContext(ctx context.Context, client *Client, request *UntagResourcesRequest, runtime *dara.RuntimeOptions) (_result *UntagResourcesResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9732,7 +9732,7 @@ func (client *Client) UntagResourcesWithContext(ctx context.Context, request *Un
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateAppKeyStateResponse
-func (client *Client) UpdateAppKeyStateWithContext(ctx context.Context, request *UpdateAppKeyStateRequest, runtime *dara.RuntimeOptions) (_result *UpdateAppKeyStateResponse, _err error) {
+func UpdateAppKeyStateWithContext(ctx context.Context, client *Client, request *UpdateAppKeyStateRequest, runtime *dara.RuntimeOptions) (_result *UpdateAppKeyStateResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9782,7 +9782,7 @@ func (client *Client) UpdateAppKeyStateWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressResponse
-func (client *Client) UpdateCloudGtmAddressWithContext(ctx context.Context, tmpReq *UpdateCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressResponse, _err error) {
+func UpdateCloudGtmAddressWithContext(ctx context.Context, client *Client, tmpReq *UpdateCloudGtmAddressRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9864,7 +9864,7 @@ func (client *Client) UpdateCloudGtmAddressWithContext(ctx context.Context, tmpR
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressEnableStatusResponse
-func (client *Client) UpdateCloudGtmAddressEnableStatusWithContext(ctx context.Context, request *UpdateCloudGtmAddressEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressEnableStatusResponse, _err error) {
+func UpdateCloudGtmAddressEnableStatusWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressEnableStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9918,7 +9918,7 @@ func (client *Client) UpdateCloudGtmAddressEnableStatusWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressManualAvailableStatusResponse
-func (client *Client) UpdateCloudGtmAddressManualAvailableStatusWithContext(ctx context.Context, request *UpdateCloudGtmAddressManualAvailableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressManualAvailableStatusResponse, _err error) {
+func UpdateCloudGtmAddressManualAvailableStatusWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressManualAvailableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressManualAvailableStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -9976,7 +9976,7 @@ func (client *Client) UpdateCloudGtmAddressManualAvailableStatusWithContext(ctx 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressPoolBasicConfigResponse
-func (client *Client) UpdateCloudGtmAddressPoolBasicConfigWithContext(ctx context.Context, request *UpdateCloudGtmAddressPoolBasicConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolBasicConfigResponse, _err error) {
+func UpdateCloudGtmAddressPoolBasicConfigWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressPoolBasicConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolBasicConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10040,7 +10040,7 @@ func (client *Client) UpdateCloudGtmAddressPoolBasicConfigWithContext(ctx contex
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressPoolEnableStatusResponse
-func (client *Client) UpdateCloudGtmAddressPoolEnableStatusWithContext(ctx context.Context, request *UpdateCloudGtmAddressPoolEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolEnableStatusResponse, _err error) {
+func UpdateCloudGtmAddressPoolEnableStatusWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressPoolEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolEnableStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10094,7 +10094,7 @@ func (client *Client) UpdateCloudGtmAddressPoolEnableStatusWithContext(ctx conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressPoolLbStrategyResponse
-func (client *Client) UpdateCloudGtmAddressPoolLbStrategyWithContext(ctx context.Context, request *UpdateCloudGtmAddressPoolLbStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolLbStrategyResponse, _err error) {
+func UpdateCloudGtmAddressPoolLbStrategyWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressPoolLbStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolLbStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10152,7 +10152,7 @@ func (client *Client) UpdateCloudGtmAddressPoolLbStrategyWithContext(ctx context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressPoolRemarkResponse
-func (client *Client) UpdateCloudGtmAddressPoolRemarkWithContext(ctx context.Context, request *UpdateCloudGtmAddressPoolRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolRemarkResponse, _err error) {
+func UpdateCloudGtmAddressPoolRemarkWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressPoolRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressPoolRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10206,7 +10206,7 @@ func (client *Client) UpdateCloudGtmAddressPoolRemarkWithContext(ctx context.Con
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmAddressRemarkResponse
-func (client *Client) UpdateCloudGtmAddressRemarkWithContext(ctx context.Context, request *UpdateCloudGtmAddressRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressRemarkResponse, _err error) {
+func UpdateCloudGtmAddressRemarkWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmAddressRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmAddressRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10256,7 +10256,7 @@ func (client *Client) UpdateCloudGtmAddressRemarkWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmGlobalAlertResponse
-func (client *Client) UpdateCloudGtmGlobalAlertWithContext(ctx context.Context, tmpReq *UpdateCloudGtmGlobalAlertRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmGlobalAlertResponse, _err error) {
+func UpdateCloudGtmGlobalAlertWithContext(ctx context.Context, client *Client, tmpReq *UpdateCloudGtmGlobalAlertRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmGlobalAlertResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10316,7 +10316,7 @@ func (client *Client) UpdateCloudGtmGlobalAlertWithContext(ctx context.Context, 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceConfigAlertResponse
-func (client *Client) UpdateCloudGtmInstanceConfigAlertWithContext(ctx context.Context, tmpReq *UpdateCloudGtmInstanceConfigAlertRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigAlertResponse, _err error) {
+func UpdateCloudGtmInstanceConfigAlertWithContext(ctx context.Context, client *Client, tmpReq *UpdateCloudGtmInstanceConfigAlertRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigAlertResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10392,7 +10392,7 @@ func (client *Client) UpdateCloudGtmInstanceConfigAlertWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceConfigBasicResponse
-func (client *Client) UpdateCloudGtmInstanceConfigBasicWithContext(ctx context.Context, request *UpdateCloudGtmInstanceConfigBasicRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigBasicResponse, _err error) {
+func UpdateCloudGtmInstanceConfigBasicWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmInstanceConfigBasicRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigBasicResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10464,7 +10464,7 @@ func (client *Client) UpdateCloudGtmInstanceConfigBasicWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceConfigEnableStatusResponse
-func (client *Client) UpdateCloudGtmInstanceConfigEnableStatusWithContext(ctx context.Context, request *UpdateCloudGtmInstanceConfigEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigEnableStatusResponse, _err error) {
+func UpdateCloudGtmInstanceConfigEnableStatusWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmInstanceConfigEnableStatusRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigEnableStatusResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10522,7 +10522,7 @@ func (client *Client) UpdateCloudGtmInstanceConfigEnableStatusWithContext(ctx co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceConfigLbStrategyResponse
-func (client *Client) UpdateCloudGtmInstanceConfigLbStrategyWithContext(ctx context.Context, request *UpdateCloudGtmInstanceConfigLbStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigLbStrategyResponse, _err error) {
+func UpdateCloudGtmInstanceConfigLbStrategyWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmInstanceConfigLbStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigLbStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10584,7 +10584,7 @@ func (client *Client) UpdateCloudGtmInstanceConfigLbStrategyWithContext(ctx cont
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceConfigRemarkResponse
-func (client *Client) UpdateCloudGtmInstanceConfigRemarkWithContext(ctx context.Context, request *UpdateCloudGtmInstanceConfigRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigRemarkResponse, _err error) {
+func UpdateCloudGtmInstanceConfigRemarkWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmInstanceConfigRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceConfigRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10638,7 +10638,7 @@ func (client *Client) UpdateCloudGtmInstanceConfigRemarkWithContext(ctx context.
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmInstanceNameResponse
-func (client *Client) UpdateCloudGtmInstanceNameWithContext(ctx context.Context, request *UpdateCloudGtmInstanceNameRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceNameResponse, _err error) {
+func UpdateCloudGtmInstanceNameWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmInstanceNameRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmInstanceNameResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10692,7 +10692,7 @@ func (client *Client) UpdateCloudGtmInstanceNameWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmMonitorTemplateResponse
-func (client *Client) UpdateCloudGtmMonitorTemplateWithContext(ctx context.Context, tmpReq *UpdateCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmMonitorTemplateResponse, _err error) {
+func UpdateCloudGtmMonitorTemplateWithContext(ctx context.Context, client *Client, tmpReq *UpdateCloudGtmMonitorTemplateRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmMonitorTemplateResponse, _err error) {
 	_err = tmpReq.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10772,7 +10772,7 @@ func (client *Client) UpdateCloudGtmMonitorTemplateWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCloudGtmMonitorTemplateRemarkResponse
-func (client *Client) UpdateCloudGtmMonitorTemplateRemarkWithContext(ctx context.Context, request *UpdateCloudGtmMonitorTemplateRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmMonitorTemplateRemarkResponse, _err error) {
+func UpdateCloudGtmMonitorTemplateRemarkWithContext(ctx context.Context, client *Client, request *UpdateCloudGtmMonitorTemplateRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateCloudGtmMonitorTemplateRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10832,7 +10832,7 @@ func (client *Client) UpdateCloudGtmMonitorTemplateRemarkWithContext(ctx context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateCustomLineResponse
-func (client *Client) UpdateCustomLineWithContext(ctx context.Context, request *UpdateCustomLineRequest, runtime *dara.RuntimeOptions) (_result *UpdateCustomLineResponse, _err error) {
+func UpdateCustomLineWithContext(ctx context.Context, client *Client, request *UpdateCustomLineRequest, runtime *dara.RuntimeOptions) (_result *UpdateCustomLineResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10886,7 +10886,7 @@ func (client *Client) UpdateCustomLineWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDNSSLBWeightResponse
-func (client *Client) UpdateDNSSLBWeightWithContext(ctx context.Context, request *UpdateDNSSLBWeightRequest, runtime *dara.RuntimeOptions) (_result *UpdateDNSSLBWeightResponse, _err error) {
+func UpdateDNSSLBWeightWithContext(ctx context.Context, client *Client, request *UpdateDNSSLBWeightRequest, runtime *dara.RuntimeOptions) (_result *UpdateDNSSLBWeightResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -10940,7 +10940,7 @@ func (client *Client) UpdateDNSSLBWeightWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsCacheDomainResponse
-func (client *Client) UpdateDnsCacheDomainWithContext(ctx context.Context, request *UpdateDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsCacheDomainResponse, _err error) {
+func UpdateDnsCacheDomainWithContext(ctx context.Context, client *Client, request *UpdateDnsCacheDomainRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsCacheDomainResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11010,7 +11010,7 @@ func (client *Client) UpdateDnsCacheDomainWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsCacheDomainRemarkResponse
-func (client *Client) UpdateDnsCacheDomainRemarkWithContext(ctx context.Context, request *UpdateDnsCacheDomainRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsCacheDomainRemarkResponse, _err error) {
+func UpdateDnsCacheDomainRemarkWithContext(ctx context.Context, client *Client, request *UpdateDnsCacheDomainRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsCacheDomainRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11060,7 +11060,7 @@ func (client *Client) UpdateDnsCacheDomainRemarkWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsGtmAccessStrategyResponse
-func (client *Client) UpdateDnsGtmAccessStrategyWithContext(ctx context.Context, request *UpdateDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmAccessStrategyResponse, _err error) {
+func UpdateDnsGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *UpdateDnsGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11166,7 +11166,7 @@ func (client *Client) UpdateDnsGtmAccessStrategyWithContext(ctx context.Context,
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsGtmAddressPoolResponse
-func (client *Client) UpdateDnsGtmAddressPoolWithContext(ctx context.Context, request *UpdateDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmAddressPoolResponse, _err error) {
+func UpdateDnsGtmAddressPoolWithContext(ctx context.Context, client *Client, request *UpdateDnsGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11224,7 +11224,7 @@ func (client *Client) UpdateDnsGtmAddressPoolWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsGtmInstanceGlobalConfigResponse
-func (client *Client) UpdateDnsGtmInstanceGlobalConfigWithContext(ctx context.Context, request *UpdateDnsGtmInstanceGlobalConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmInstanceGlobalConfigResponse, _err error) {
+func UpdateDnsGtmInstanceGlobalConfigWithContext(ctx context.Context, client *Client, request *UpdateDnsGtmInstanceGlobalConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmInstanceGlobalConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11310,7 +11310,7 @@ func (client *Client) UpdateDnsGtmInstanceGlobalConfigWithContext(ctx context.Co
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDnsGtmMonitorResponse
-func (client *Client) UpdateDnsGtmMonitorWithContext(ctx context.Context, request *UpdateDnsGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmMonitorResponse, _err error) {
+func UpdateDnsGtmMonitorWithContext(ctx context.Context, client *Client, request *UpdateDnsGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *UpdateDnsGtmMonitorResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11384,7 +11384,7 @@ func (client *Client) UpdateDnsGtmMonitorWithContext(ctx context.Context, reques
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDomainGroupResponse
-func (client *Client) UpdateDomainGroupWithContext(ctx context.Context, request *UpdateDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainGroupResponse, _err error) {
+func UpdateDomainGroupWithContext(ctx context.Context, client *Client, request *UpdateDomainGroupRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainGroupResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11434,7 +11434,7 @@ func (client *Client) UpdateDomainGroupWithContext(ctx context.Context, request 
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDomainRecordResponse
-func (client *Client) UpdateDomainRecordWithContext(ctx context.Context, request *UpdateDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRecordResponse, _err error) {
+func UpdateDomainRecordWithContext(ctx context.Context, client *Client, request *UpdateDomainRecordRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRecordResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11508,7 +11508,7 @@ func (client *Client) UpdateDomainRecordWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDomainRecordRemarkResponse
-func (client *Client) UpdateDomainRecordRemarkWithContext(ctx context.Context, request *UpdateDomainRecordRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRecordRemarkResponse, _err error) {
+func UpdateDomainRecordRemarkWithContext(ctx context.Context, client *Client, request *UpdateDomainRecordRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRecordRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11562,7 +11562,7 @@ func (client *Client) UpdateDomainRecordRemarkWithContext(ctx context.Context, r
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateDomainRemarkResponse
-func (client *Client) UpdateDomainRemarkWithContext(ctx context.Context, request *UpdateDomainRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRemarkResponse, _err error) {
+func UpdateDomainRemarkWithContext(ctx context.Context, client *Client, request *UpdateDomainRemarkRequest, runtime *dara.RuntimeOptions) (_result *UpdateDomainRemarkResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11608,7 +11608,7 @@ func (client *Client) UpdateDomainRemarkWithContext(ctx context.Context, request
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateGtmAccessStrategyResponse
-func (client *Client) UpdateGtmAccessStrategyWithContext(ctx context.Context, request *UpdateGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmAccessStrategyResponse, _err error) {
+func UpdateGtmAccessStrategyWithContext(ctx context.Context, client *Client, request *UpdateGtmAccessStrategyRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmAccessStrategyResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11666,7 +11666,7 @@ func (client *Client) UpdateGtmAccessStrategyWithContext(ctx context.Context, re
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateGtmAddressPoolResponse
-func (client *Client) UpdateGtmAddressPoolWithContext(ctx context.Context, request *UpdateGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmAddressPoolResponse, _err error) {
+func UpdateGtmAddressPoolWithContext(ctx context.Context, client *Client, request *UpdateGtmAddressPoolRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmAddressPoolResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11728,7 +11728,7 @@ func (client *Client) UpdateGtmAddressPoolWithContext(ctx context.Context, reque
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateGtmInstanceGlobalConfigResponse
-func (client *Client) UpdateGtmInstanceGlobalConfigWithContext(ctx context.Context, request *UpdateGtmInstanceGlobalConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmInstanceGlobalConfigResponse, _err error) {
+func UpdateGtmInstanceGlobalConfigWithContext(ctx context.Context, client *Client, request *UpdateGtmInstanceGlobalConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmInstanceGlobalConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11802,7 +11802,7 @@ func (client *Client) UpdateGtmInstanceGlobalConfigWithContext(ctx context.Conte
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateGtmMonitorResponse
-func (client *Client) UpdateGtmMonitorWithContext(ctx context.Context, request *UpdateGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmMonitorResponse, _err error) {
+func UpdateGtmMonitorWithContext(ctx context.Context, client *Client, request *UpdateGtmMonitorRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmMonitorResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11872,7 +11872,7 @@ func (client *Client) UpdateGtmMonitorWithContext(ctx context.Context, request *
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateGtmRecoveryPlanResponse
-func (client *Client) UpdateGtmRecoveryPlanWithContext(ctx context.Context, request *UpdateGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmRecoveryPlanResponse, _err error) {
+func UpdateGtmRecoveryPlanWithContext(ctx context.Context, client *Client, request *UpdateGtmRecoveryPlanRequest, runtime *dara.RuntimeOptions) (_result *UpdateGtmRecoveryPlanResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11930,7 +11930,7 @@ func (client *Client) UpdateGtmRecoveryPlanWithContext(ctx context.Context, requ
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return UpdateIspFlushCacheInstanceConfigResponse
-func (client *Client) UpdateIspFlushCacheInstanceConfigWithContext(ctx context.Context, request *UpdateIspFlushCacheInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateIspFlushCacheInstanceConfigResponse, _err error) {
+func UpdateIspFlushCacheInstanceConfigWithContext(ctx context.Context, client *Client, request *UpdateIspFlushCacheInstanceConfigRequest, runtime *dara.RuntimeOptions) (_result *UpdateIspFlushCacheInstanceConfigResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -11980,7 +11980,7 @@ func (client *Client) UpdateIspFlushCacheInstanceConfigWithContext(ctx context.C
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ValidateDnsGtmCnameRrCanUseResponse
-func (client *Client) ValidateDnsGtmCnameRrCanUseWithContext(ctx context.Context, request *ValidateDnsGtmCnameRrCanUseRequest, runtime *dara.RuntimeOptions) (_result *ValidateDnsGtmCnameRrCanUseResponse, _err error) {
+func ValidateDnsGtmCnameRrCanUseWithContext(ctx context.Context, client *Client, request *ValidateDnsGtmCnameRrCanUseRequest, runtime *dara.RuntimeOptions) (_result *ValidateDnsGtmCnameRrCanUseResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
@@ -12042,7 +12042,7 @@ func (client *Client) ValidateDnsGtmCnameRrCanUseWithContext(ctx context.Context
 // @param runtime - runtime options for this request RuntimeOptions
 //
 // @return ValidatePdnsUdpIpSegmentResponse
-func (client *Client) ValidatePdnsUdpIpSegmentWithContext(ctx context.Context, request *ValidatePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *ValidatePdnsUdpIpSegmentResponse, _err error) {
+func ValidatePdnsUdpIpSegmentWithContext(ctx context.Context, client *Client, request *ValidatePdnsUdpIpSegmentRequest, runtime *dara.RuntimeOptions) (_result *ValidatePdnsUdpIpSegmentResponse, _err error) {
 	_err = request.Validate()
 	if _err != nil {
 		return _result, _err
