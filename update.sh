@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-LIB_VERSION=v4.5.10
+LIB_VERSION=v4.5.11
 
 SRC_ORG='alibabacloud-go'
 DEST_ORG='go-acme'
@@ -20,20 +20,20 @@ DEST_DIR=$(mktemp -d)
 
 ## Fake fork remote
 
-# DEST_REMOTE=$(mktemp -d)
-#
-# git init -q --bare ${DEST_REMOTE}
-#
-# DEST_TEMP=$(mktemp -d)
-# git clone -q ${DEST_REMOTE} ${DEST_TEMP}
-#
-# cd ${DEST_TEMP}
-# git switch -q -c ${DEST_BRANCH}
-# git commit -q -m "Initial empty commit" --allow-empty
-# git push -q -u origin ${DEST_BRANCH}
-# cd ..
-#
-# rm -rf ${DEST_TEMP}
+DEST_REMOTE=$(mktemp -d)
+
+git init -q --bare ${DEST_REMOTE}
+
+DEST_TEMP=$(mktemp -d)
+git clone -q ${DEST_REMOTE} ${DEST_TEMP}
+
+cd ${DEST_TEMP}
+git switch -q -c ${DEST_BRANCH}
+git commit -q -m "Initial empty commit" --allow-empty
+git push -q -u origin ${DEST_BRANCH}
+cd ..
+
+rm -rf ${DEST_TEMP}
 
 ## Prepare the fork
 # git clone -q --single-branch git@github.com:${DEST_ORG}/${DEST_REPO_NAME}.git /tmp/${DEST_REPO_NAME}
@@ -76,25 +76,35 @@ sed -E '
 
 # --- Transform receiver (client *Client) to parameter ---
 
-s/\(client \*Client\) ([^))]+)\(/\1(client *Client, /
+s|\(client \*Client\) ([^(]+)\(|\1(client *Client, |
 
 # --- Transform method call to function call ---
 
-s/\bclient\.([a-zA-Z0-9]+)\(/\1(client,/
+s|\bclient\.([a-zA-Z0-9]+)\(|\1(client,|
 
 # --- Fixes ---
 
 # CallApi must be a method
-s/CallApi\(client,/client.CallApi(/
+s|CallApi\(client,|client.CallApi(|
 
 # Init method and NewClient constructor
-s/_err = CheckConfig\(client,config\)/_err = client.CheckConfig(config)/
-s/func Init\(client \*Client, /func (client *Client) Init(/
-s/err := Init\(client,/err := client.Init(/
+s|_err = CheckConfig\(client,config\)|_err = client.CheckConfig(config)|
+s|func Init\(client \*Client, |func (client *Client) Init(|
+s|err := Init\(client,|err := client.Init(|
 
 ' client/client.go > client/modifiedclient.go
 
 rm client/client.go
+
+sed -E '
+
+# --- Transform receiver (client *Client) to parameter ---
+
+s|\(client \*Client\) ([^(]+)\(ctx context.Context, |\1(ctx context.Context, client *Client, |
+
+' client/client_context_func.go > client/modifiedclient_context_func.go
+
+rm client/client_context_func.go
 
 ## Check compilation
 go mod tidy
@@ -113,14 +123,14 @@ git push -q origin ${LIB_VERSION}
 cd ..
 
 rm -rf ${SRC_DIR}
-rm -rf ${DEST_DIR}
+# rm -rf ${DEST_DIR}
 
 ##########################
 
-# echo ${DEST_DIR}
-#
-# rm -rf ${DEST_REMOTE}
-#
+echo ${DEST_DIR}
+
+rm -rf ${DEST_REMOTE}
+
 # cd /home/ldez/sources/go-acme/lego
 #
 # go mod edit -dropreplace github.com/alibabacloud-go/alidns-20150109/v4
