@@ -1,12 +1,13 @@
 #!/bin/bash -e
 
-LIB_VERSION=v4.5.11
-
 SRC_ORG='alibabacloud-go'
 DEST_ORG='go-acme'
 
 SRC_REPO_NAME='alidns-20150109'
 DEST_REPO_NAME='alidns-20150109'
+
+#LIB_VERSION=v4.5.0
+LIB_VERSION=$(curl -s https://api.github.com/repos/${SRC_ORG}/${SRC_REPO_NAME}/releases/latest | jq -r '.tag_name')
 
 SRC_REMOTE="git@github.com:${SRC_ORG}/${SRC_REPO_NAME}.git"
 DEST_REMOTE="git@github.com:${DEST_ORG}/${DEST_REPO_NAME}.git"
@@ -20,20 +21,20 @@ DEST_DIR=$(mktemp -d)
 
 ## Fake fork remote
 
-DEST_REMOTE=$(mktemp -d)
-
-git init -q --bare ${DEST_REMOTE}
-
-DEST_TEMP=$(mktemp -d)
-git clone -q ${DEST_REMOTE} ${DEST_TEMP}
-
-cd ${DEST_TEMP}
-git switch -q -c ${DEST_BRANCH}
-git commit -q -m "Initial empty commit" --allow-empty
-git push -q -u origin ${DEST_BRANCH}
-cd ..
-
-rm -rf ${DEST_TEMP}
+# DEST_REMOTE=$(mktemp -d)
+#
+# git init -q --bare ${DEST_REMOTE}
+#
+# DEST_TEMP=$(mktemp -d)
+# git clone -q ${DEST_REMOTE} ${DEST_TEMP}
+#
+# cd ${DEST_TEMP}
+# git switch -q -c ${DEST_BRANCH}
+# git commit -q -m "Initial empty commit" --allow-empty
+# git push -q -u origin ${DEST_BRANCH}
+# cd ..
+#
+# rm -rf ${DEST_TEMP}
 
 ## Prepare the fork
 # git clone -q --single-branch git@github.com:${DEST_ORG}/${DEST_REPO_NAME}.git /tmp/${DEST_REPO_NAME}
@@ -123,14 +124,14 @@ git push -q origin ${LIB_VERSION}
 cd ..
 
 rm -rf ${SRC_DIR}
-# rm -rf ${DEST_DIR}
+rm -rf ${DEST_DIR}
 
 ##########################
 
-echo ${DEST_DIR}
-
-rm -rf ${DEST_REMOTE}
-
+# echo ${DEST_DIR}
+#
+# rm -rf ${DEST_REMOTE}
+#
 # cd /home/ldez/sources/go-acme/lego
 #
 # go mod edit -dropreplace github.com/alibabacloud-go/alidns-20150109/v4
