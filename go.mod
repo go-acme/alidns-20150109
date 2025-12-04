@@ -1,4 +1,4 @@
-module github.com/go-acme/alidns-20150109/v4
+module github.com/go-acme/alidns-20150109/v5
 
 go 1.14
 
