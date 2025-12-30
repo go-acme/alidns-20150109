@@ -109,6 +109,7 @@ rm client/client_context_func.go
 
 ## Check compilation
 go mod tidy
+golangci-lint fmt -Egofmt
 go build ./client/
 rm go.sum
 
