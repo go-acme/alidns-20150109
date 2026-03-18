@@ -658,7 +658,7 @@ func AddDomain(client *Client, request *AddDomainRequest) (_result *AddDomainRes
 
 // Summary:
 //
-// Creates a backup task for a domain name.
+// Creates a backup for the domain name based on the specified domain name and backup cycle.
 //
 // @param request - AddDomainBackupRequest
 //
@@ -710,7 +710,7 @@ func AddDomainBackupWithOptions(client *Client, request *AddDomainBackupRequest,
 
 // Summary:
 //
-// Creates a backup task for a domain name.
+// Creates a backup for the domain name based on the specified domain name and backup cycle.
 //
 // @param request - AddDomainBackupRequest
 //
@@ -886,6 +886,10 @@ func AddDomainRecord(client *Client, request *AddDomainRecordRequest) (_result *
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to create an access policy for a Global Traffic Manager (GTM) instance.
+//
 // @param request - AddGtmAccessStrategyRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -946,6 +950,10 @@ func AddGtmAccessStrategyWithOptions(client *Client, request *AddGtmAccessStrate
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to create an access policy for a Global Traffic Manager (GTM) instance.
+//
 // @param request - AddGtmAccessStrategyRequest
 //
 // @return AddGtmAccessStrategyResponse
@@ -1236,7 +1244,7 @@ func AddGtmRecoveryPlan(client *Client, request *AddGtmRecoveryPlanRequest) (_re
 
 // Summary:
 //
-// 新增递归解析内置权威解析记录
+// # Adds HTTPDNS authoritative DNS resolution records
 //
 // @param request - AddRecursionRecordRequest
 //
@@ -1316,7 +1324,7 @@ func AddRecursionRecordWithOptions(client *Client, request *AddRecursionRecordRe
 
 // Summary:
 //
-// 新增递归解析内置权威解析记录
+// # Adds HTTPDNS authoritative DNS resolution records
 //
 // @param request - AddRecursionRecordRequest
 //
@@ -1334,7 +1342,7 @@ func AddRecursionRecord(client *Client, request *AddRecursionRecordRequest) (_re
 
 // Summary:
 //
-// 新增递归解析内置权威域名zone
+// # Adds HTTPDNS zone
 //
 // @param request - AddRecursionZoneRequest
 //
@@ -1386,7 +1394,7 @@ func AddRecursionZoneWithOptions(client *Client, request *AddRecursionZoneReques
 
 // Summary:
 //
-// 新增递归解析内置权威域名zone
+// # Adds HTTPDNS zone
 //
 // @param request - AddRecursionZoneRequest
 //
@@ -2332,7 +2340,7 @@ func CreateCloudGtmMonitorTemplate(client *Client, request *CreateCloudGtmMonito
 
 // Summary:
 //
-// 创建公共DNS AppKey
+// Creates an AppKey in Alibaba Cloud Public DNS.
 //
 // @param request - CreatePdnsAppKeyRequest
 //
@@ -2380,7 +2388,7 @@ func CreatePdnsAppKeyWithOptions(client *Client, request *CreatePdnsAppKeyReques
 
 // Summary:
 //
-// 创建公共DNS AppKey
+// Creates an AppKey in Alibaba Cloud Public DNS.
 //
 // @param request - CreatePdnsAppKeyRequest
 //
@@ -2886,6 +2894,10 @@ func DeleteDnsCacheDomain(client *Client, request *DeleteDnsCacheDomainRequest) 
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes an access policy by policy ID.
+//
 // @param request - DeleteDnsGtmAccessStrategyRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -2930,6 +2942,10 @@ func DeleteDnsGtmAccessStrategyWithOptions(client *Client, request *DeleteDnsGtm
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes an access policy by policy ID.
+//
 // @param request - DeleteDnsGtmAccessStrategyRequest
 //
 // @return DeleteDnsGtmAccessStrategyResponse
@@ -2944,6 +2960,10 @@ func DeleteDnsGtmAccessStrategy(client *Client, request *DeleteDnsGtmAccessStrat
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes an address pool by address pool ID.
+//
 // @param request - DeleteDnsGtmAddressPoolRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -2988,6 +3008,10 @@ func DeleteDnsGtmAddressPoolWithOptions(client *Client, request *DeleteDnsGtmAdd
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes an address pool by address pool ID.
+//
 // @param request - DeleteDnsGtmAddressPoolRequest
 //
 // @return DeleteDnsGtmAddressPoolResponse
@@ -3212,6 +3236,10 @@ func DeleteDomainRecord(client *Client, request *DeleteDomainRecordRequest) (_re
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to delete an access policy of a Global Traffic Manager (GTM) instance.
+//
 // @param request - DeleteGtmAccessStrategyRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -3256,6 +3284,10 @@ func DeleteGtmAccessStrategyWithOptions(client *Client, request *DeleteGtmAccess
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to delete an access policy of a Global Traffic Manager (GTM) instance.
+//
 // @param request - DeleteGtmAccessStrategyRequest
 //
 // @return DeleteGtmAccessStrategyResponse
@@ -3270,6 +3302,10 @@ func DeleteGtmAccessStrategy(client *Client, request *DeleteGtmAccessStrategyReq
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to delete an address pool of a Global Traffic Manager (GTM).
+//
 // @param request - DeleteGtmAddressPoolRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -3314,6 +3350,10 @@ func DeleteGtmAddressPoolWithOptions(client *Client, request *DeleteGtmAddressPo
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to delete an address pool of a Global Traffic Manager (GTM).
+//
 // @param request - DeleteGtmAddressPoolRequest
 //
 // @return DeleteGtmAddressPoolResponse
@@ -3328,6 +3368,10 @@ func DeleteGtmAddressPool(client *Client, request *DeleteGtmAddressPoolRequest) 
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes a disaster recovery plan.
+//
 // @param request - DeleteGtmRecoveryPlanRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -3372,6 +3416,10 @@ func DeleteGtmRecoveryPlanWithOptions(client *Client, request *DeleteGtmRecovery
 	return _result, _err
 }
 
+// Summary:
+//
+// Deletes a disaster recovery plan.
+//
 // @param request - DeleteGtmRecoveryPlanRequest
 //
 // @return DeleteGtmRecoveryPlanResponse
@@ -3388,7 +3436,7 @@ func DeleteGtmRecoveryPlan(client *Client, request *DeleteGtmRecoveryPlanRequest
 
 // Summary:
 //
-// 删除递归解析内置权威解析记录
+// # Deletes HTTPDNS resolution records
 //
 // @param request - DeleteRecursionRecordRequest
 //
@@ -3436,7 +3484,7 @@ func DeleteRecursionRecordWithOptions(client *Client, request *DeleteRecursionRe
 
 // Summary:
 //
-// 删除递归解析内置权威解析记录
+// # Deletes HTTPDNS resolution records
 //
 // @param request - DeleteRecursionRecordRequest
 //
@@ -3454,7 +3502,7 @@ func DeleteRecursionRecord(client *Client, request *DeleteRecursionRecordRequest
 
 // Summary:
 //
-// 删除递归解析内置权威域名zone
+// # Deletes HTTPDNS authoritative domain zone
 //
 // @param request - DeleteRecursionZoneRequest
 //
@@ -3502,7 +3550,7 @@ func DeleteRecursionZoneWithOptions(client *Client, request *DeleteRecursionZone
 
 // Summary:
 //
-// 删除递归解析内置权威域名zone
+// # Deletes HTTPDNS authoritative domain zone
 //
 // @param request - DeleteRecursionZoneRequest
 //
@@ -4633,7 +4681,7 @@ func DescribeDNSSLBSubDomains(client *Client, request *DescribeDNSSLBSubDomainsR
 
 // Summary:
 //
-// 查询代理域名
+// Queries cache-accelerated domain names within your account based on the specified parameters.
 //
 // @param request - DescribeDnsCacheDomainsRequest
 //
@@ -4689,7 +4737,7 @@ func DescribeDnsCacheDomainsWithOptions(client *Client, request *DescribeDnsCach
 
 // Summary:
 //
-// 查询代理域名
+// Queries cache-accelerated domain names within your account based on the specified parameters.
 //
 // @param request - DescribeDnsCacheDomainsRequest
 //
@@ -4707,7 +4755,7 @@ func DescribeDnsCacheDomains(client *Client, request *DescribeDnsCacheDomainsReq
 
 // Summary:
 //
-// Queries access policies of a Global Traffic Manager (GTM) instance.
+// Queries the access policies of a GTM instance.
 //
 // @param request - DescribeDnsGtmAccessStrategiesRequest
 //
@@ -4767,7 +4815,7 @@ func DescribeDnsGtmAccessStrategiesWithOptions(client *Client, request *Describe
 
 // Summary:
 //
-// Queries access policies of a Global Traffic Manager (GTM) instance.
+// Queries the access policies of a GTM instance.
 //
 // @param request - DescribeDnsGtmAccessStrategiesRequest
 //
@@ -4785,7 +4833,7 @@ func DescribeDnsGtmAccessStrategies(client *Client, request *DescribeDnsGtmAcces
 
 // Summary:
 //
-// Queries detailed information about an access policy of a Global Traffic Manager (GTM) instance.
+// Queries the details about an access policy.
 //
 // @param request - DescribeDnsGtmAccessStrategyRequest
 //
@@ -4833,7 +4881,7 @@ func DescribeDnsGtmAccessStrategyWithOptions(client *Client, request *DescribeDn
 
 // Summary:
 //
-// Queries detailed information about an access policy of a Global Traffic Manager (GTM) instance.
+// Queries the details about an access policy.
 //
 // @param request - DescribeDnsGtmAccessStrategyRequest
 //
@@ -4851,7 +4899,7 @@ func DescribeDnsGtmAccessStrategy(client *Client, request *DescribeDnsGtmAccessS
 
 // Summary:
 //
-// Queries the available configurations of an access policy of a Global Traffic Manager (GTM) instance.
+// Queries the configuration items that can be set for an access policy.
 //
 // @param request - DescribeDnsGtmAccessStrategyAvailableConfigRequest
 //
@@ -4903,7 +4951,7 @@ func DescribeDnsGtmAccessStrategyAvailableConfigWithOptions(client *Client, requ
 
 // Summary:
 //
-// Queries the available configurations of an access policy of a Global Traffic Manager (GTM) instance.
+// Queries the configuration items that can be set for an access policy.
 //
 // @param request - DescribeDnsGtmAccessStrategyAvailableConfigRequest
 //
@@ -4991,7 +5039,7 @@ func DescribeDnsGtmAddrAttributeInfo(client *Client, request *DescribeDnsGtmAddr
 
 // Summary:
 //
-// Queries the available configurations of an address pool of a Global Traffic Manager (GTM) instance.
+// Queries the available configurations of an address pool of a GTM instance.
 //
 // @param request - DescribeDnsGtmAddressPoolAvailableConfigRequest
 //
@@ -5039,7 +5087,7 @@ func DescribeDnsGtmAddressPoolAvailableConfigWithOptions(client *Client, request
 
 // Summary:
 //
-// Queries the available configurations of an address pool of a Global Traffic Manager (GTM) instance.
+// Queries the available configurations of an address pool of a GTM instance.
 //
 // @param request - DescribeDnsGtmAddressPoolAvailableConfigRequest
 //
@@ -5055,6 +5103,10 @@ func DescribeDnsGtmAddressPoolAvailableConfig(client *Client, request *DescribeD
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the available alert groups of a Global Traffic Manager (GTM) instance.
+//
 // @param request - DescribeDnsGtmAvailableAlertGroupRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -5095,6 +5147,10 @@ func DescribeDnsGtmAvailableAlertGroupWithOptions(client *Client, request *Descr
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the available alert groups of a Global Traffic Manager (GTM) instance.
+//
 // @param request - DescribeDnsGtmAvailableAlertGroupRequest
 //
 // @return DescribeDnsGtmAvailableAlertGroupResponse
@@ -5111,7 +5167,7 @@ func DescribeDnsGtmAvailableAlertGroup(client *Client, request *DescribeDnsGtmAv
 
 // Summary:
 //
-// Queries detailed information about a Global Traffic Manager (GTM) instance.
+// Obtains the details of an instance based on the ID of the instance.
 //
 // @param request - DescribeDnsGtmInstanceRequest
 //
@@ -5159,7 +5215,7 @@ func DescribeDnsGtmInstanceWithOptions(client *Client, request *DescribeDnsGtmIn
 
 // Summary:
 //
-// Queries detailed information about a Global Traffic Manager (GTM) instance.
+// Obtains the details of an instance based on the ID of the instance.
 //
 // @param request - DescribeDnsGtmInstanceRequest
 //
@@ -5177,7 +5233,7 @@ func DescribeDnsGtmInstance(client *Client, request *DescribeDnsGtmInstanceReque
 
 // Summary:
 //
-// Queries detailed information about an address pool of a Global Traffic Manager (GTM) instance.
+// Queries detailed information about an address pool by address pool ID.
 //
 // @param request - DescribeDnsGtmInstanceAddressPoolRequest
 //
@@ -5225,7 +5281,7 @@ func DescribeDnsGtmInstanceAddressPoolWithOptions(client *Client, request *Descr
 
 // Summary:
 //
-// Queries detailed information about an address pool of a Global Traffic Manager (GTM) instance.
+// Queries detailed information about an address pool by address pool ID.
 //
 // @param request - DescribeDnsGtmInstanceAddressPoolRequest
 //
@@ -5243,7 +5299,7 @@ func DescribeDnsGtmInstanceAddressPool(client *Client, request *DescribeDnsGtmIn
 
 // Summary:
 //
-// Queries the address pools of a Global Traffic Manager (GTM) instance.
+// Queries address pools by the IDs of GTM instances.
 //
 // @param request - DescribeDnsGtmInstanceAddressPoolsRequest
 //
@@ -5299,7 +5355,7 @@ func DescribeDnsGtmInstanceAddressPoolsWithOptions(client *Client, request *Desc
 
 // Summary:
 //
-// Queries the address pools of a Global Traffic Manager (GTM) instance.
+// Queries address pools by the IDs of GTM instances.
 //
 // @param request - DescribeDnsGtmInstanceAddressPoolsRequest
 //
@@ -5317,7 +5373,7 @@ func DescribeDnsGtmInstanceAddressPools(client *Client, request *DescribeDnsGtmI
 
 // Summary:
 //
-// Queries the status of a Global Traffic Manager (GTM) instance.
+// Obtains the current status of the instance by instance ID.
 //
 // @param request - DescribeDnsGtmInstanceStatusRequest
 //
@@ -5365,7 +5421,7 @@ func DescribeDnsGtmInstanceStatusWithOptions(client *Client, request *DescribeDn
 
 // Summary:
 //
-// Queries the status of a Global Traffic Manager (GTM) instance.
+// Obtains the current status of the instance by instance ID.
 //
 // @param request - DescribeDnsGtmInstanceStatusRequest
 //
@@ -5383,7 +5439,7 @@ func DescribeDnsGtmInstanceStatus(client *Client, request *DescribeDnsGtmInstanc
 
 // Summary:
 //
-// Queries the CNAME domain name assigned by the system for a Global Traffic Manager (GTM) instance.
+// Queries the canonical name (CNAME) assigned by the system for a GTM instance.
 //
 // @param request - DescribeDnsGtmInstanceSystemCnameRequest
 //
@@ -5431,7 +5487,7 @@ func DescribeDnsGtmInstanceSystemCnameWithOptions(client *Client, request *Descr
 
 // Summary:
 //
-// Queries the CNAME domain name assigned by the system for a Global Traffic Manager (GTM) instance.
+// Queries the canonical name (CNAME) assigned by the system for a GTM instance.
 //
 // @param request - DescribeDnsGtmInstanceSystemCnameRequest
 //
@@ -5527,7 +5583,7 @@ func DescribeDnsGtmInstances(client *Client, request *DescribeDnsGtmInstancesReq
 
 // Summary:
 //
-// Queries operation logs of a Global Traffic Manager (GTM) instance.
+// Obtains the operation logs by instance ID.
 //
 // @param request - DescribeDnsGtmLogsRequest
 //
@@ -5595,7 +5651,7 @@ func DescribeDnsGtmLogsWithOptions(client *Client, request *DescribeDnsGtmLogsRe
 
 // Summary:
 //
-// Queries operation logs of a Global Traffic Manager (GTM) instance.
+// Obtains the operation logs by instance ID.
 //
 // @param request - DescribeDnsGtmLogsRequest
 //
@@ -5907,6 +5963,10 @@ func DescribeDnsProductInstances(client *Client, request *DescribeDnsProductInst
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for a domain name.
+//
 // @param request - DescribeDohAccountStatisticsRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -5955,6 +6015,10 @@ func DescribeDohAccountStatisticsWithOptions(client *Client, request *DescribeDo
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for a domain name.
+//
 // @param request - DescribeDohAccountStatisticsRequest
 //
 // @return DescribeDohAccountStatisticsResponse
@@ -5971,7 +6035,7 @@ func DescribeDohAccountStatistics(client *Client, request *DescribeDohAccountSta
 
 // Summary:
 //
-// 查询DOH域名请求量数据
+// The statistics on DoH-based requests for a domain name are queried.
 //
 // @param request - DescribeDohDomainStatisticsRequest
 //
@@ -6027,7 +6091,7 @@ func DescribeDohDomainStatisticsWithOptions(client *Client, request *DescribeDoh
 
 // Summary:
 //
-// 查询DOH域名请求量数据
+// The statistics on DoH-based requests for a domain name are queried.
 //
 // @param request - DescribeDohDomainStatisticsRequest
 //
@@ -6043,6 +6107,10 @@ func DescribeDohDomainStatistics(client *Client, request *DescribeDohDomainStati
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for domain names.
+//
 // @param request - DescribeDohDomainStatisticsSummaryRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -6103,6 +6171,10 @@ func DescribeDohDomainStatisticsSummaryWithOptions(client *Client, request *Desc
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for domain names.
+//
 // @param request - DescribeDohDomainStatisticsSummaryRequest
 //
 // @return DescribeDohDomainStatisticsSummaryResponse
@@ -6117,6 +6189,10 @@ func DescribeDohDomainStatisticsSummary(client *Client, request *DescribeDohDoma
 	return _result, _err
 }
 
+// Summary:
+//
+// Obtains the statistics on DoH-based requests for a subdomain name.
+//
 // @param request - DescribeDohSubDomainStatisticsRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -6169,6 +6245,10 @@ func DescribeDohSubDomainStatisticsWithOptions(client *Client, request *Describe
 	return _result, _err
 }
 
+// Summary:
+//
+// Obtains the statistics on DoH-based requests for a subdomain name.
+//
 // @param request - DescribeDohSubDomainStatisticsRequest
 //
 // @return DescribeDohSubDomainStatisticsResponse
@@ -6183,6 +6263,10 @@ func DescribeDohSubDomainStatistics(client *Client, request *DescribeDohSubDomai
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for subdomain names.
+//
 // @param request - DescribeDohSubDomainStatisticsSummaryRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -6247,6 +6331,10 @@ func DescribeDohSubDomainStatisticsSummaryWithOptions(client *Client, request *D
 	return _result, _err
 }
 
+// Summary:
+//
+// Queries the statistics on DoH-based requests for subdomain names.
+//
 // @param request - DescribeDohSubDomainStatisticsSummaryRequest
 //
 // @return DescribeDohSubDomainStatisticsSummaryResponse
@@ -7519,6 +7607,10 @@ func DescribeGtmAccessStrategyAvailableConfig(client *Client, request *DescribeG
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to query the available alert groups for a Global Traffic Manager (GTM) instance.
+//
 // @param request - DescribeGtmAvailableAlertGroupRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -7559,6 +7651,10 @@ func DescribeGtmAvailableAlertGroupWithOptions(client *Client, request *Describe
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to query the available alert groups for a Global Traffic Manager (GTM) instance.
+//
 // @param request - DescribeGtmAvailableAlertGroupRequest
 //
 // @return DescribeGtmAvailableAlertGroupResponse
@@ -7849,6 +7945,10 @@ func DescribeGtmInstanceStatus(client *Client, request *DescribeGtmInstanceStatu
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to query the CNAME record assigned by the system.
+//
 // @param request - DescribeGtmInstanceSystemCnameRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -7893,6 +7993,10 @@ func DescribeGtmInstanceSystemCnameWithOptions(client *Client, request *Describe
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to query the CNAME record assigned by the system.
+//
 // @param request - DescribeGtmInstanceSystemCnameRequest
 //
 // @return DescribeGtmInstanceSystemCnameResponse
@@ -8333,7 +8437,7 @@ func DescribeGtmRecoveryPlanAvailableConfig(client *Client, request *DescribeGtm
 
 // Summary:
 //
-// Queries the disaster recovery plans for a Global Traffic Manager (GTM) instance.
+// Queries disaster recovery plans.
 //
 // @param request - DescribeGtmRecoveryPlansRequest
 //
@@ -8389,7 +8493,7 @@ func DescribeGtmRecoveryPlansWithOptions(client *Client, request *DescribeGtmRec
 
 // Summary:
 //
-// Queries the disaster recovery plans for a Global Traffic Manager (GTM) instance.
+// Queries disaster recovery plans.
 //
 // @param request - DescribeGtmRecoveryPlansRequest
 //
@@ -9183,7 +9287,7 @@ func DescribePdnsOperateLogs(client *Client, request *DescribePdnsOperateLogsReq
 
 // Summary:
 //
-// Queries the statistics on requests for Alibaba Cloud Public DNS.
+// Queries the number of requests for public DNS.
 //
 // @param request - DescribePdnsRequestStatisticRequest
 //
@@ -9247,7 +9351,7 @@ func DescribePdnsRequestStatisticWithOptions(client *Client, request *DescribePd
 
 // Summary:
 //
-// Queries the statistics on requests for Alibaba Cloud Public DNS.
+// Queries the number of requests for public DNS.
 //
 // @param request - DescribePdnsRequestStatisticRequest
 //
@@ -10145,7 +10249,7 @@ func DescribeRecordStatisticsSummary(client *Client, request *DescribeRecordStat
 
 // Summary:
 //
-// 查询递归解析内置权威解析记录详情
+// # Queries the details of HTTPDNS resolution records
 //
 // @param request - DescribeRecursionRecordRequest
 //
@@ -10189,7 +10293,7 @@ func DescribeRecursionRecordWithOptions(client *Client, request *DescribeRecursi
 
 // Summary:
 //
-// 查询递归解析内置权威解析记录详情
+// # Queries the details of HTTPDNS resolution records
 //
 // @param request - DescribeRecursionRecordRequest
 //
@@ -10359,7 +10463,7 @@ func DescribeSubDomainRecords(client *Client, request *DescribeSubDomainRecordsR
 
 // Summary:
 //
-// 查询支持的所有线路
+// Queries all lines that are supported by Alibaba Cloud DNS.
 //
 // @param request - DescribeSupportLinesRequest
 //
@@ -10411,7 +10515,7 @@ func DescribeSupportLinesWithOptions(client *Client, request *DescribeSupportLin
 
 // Summary:
 //
-// 查询支持的所有线路
+// Queries all lines that are supported by Alibaba Cloud DNS.
 //
 // @param request - DescribeSupportLinesRequest
 //
@@ -11225,7 +11329,7 @@ func ListCloudGtmInstanceConfigs(client *Client, request *ListCloudGtmInstanceCo
 
 // Summary:
 //
-// Queries a list of Global Traffic Manager (GTM) 3.0 instances.
+// Obtains the GTM 3.0 instances based on the specified parameters.
 //
 // @param request - ListCloudGtmInstancesRequest
 //
@@ -11293,7 +11397,7 @@ func ListCloudGtmInstancesWithOptions(client *Client, request *ListCloudGtmInsta
 
 // Summary:
 //
-// Queries a list of Global Traffic Manager (GTM) 3.0 instances.
+// Obtains the GTM 3.0 instances based on the specified parameters.
 //
 // @param request - ListCloudGtmInstancesRequest
 //
@@ -11328,6 +11432,10 @@ func ListCloudGtmMonitorNodesWithOptions(client *Client, request *ListCloudGtmMo
 	query := map[string]interface{}{}
 	if !dara.IsNil(request.AcceptLanguage) {
 		query["AcceptLanguage"] = request.AcceptLanguage
+	}
+
+	if !dara.IsNil(request.ShowDisabledNodes) {
+		query["ShowDisabledNodes"] = request.ShowDisabledNodes
 	}
 
 	req := &openapiutil.OpenApiRequest{
@@ -11373,7 +11481,7 @@ func ListCloudGtmMonitorNodes(client *Client, request *ListCloudGtmMonitorNodesR
 
 // Summary:
 //
-// Queries a list of health check templates.
+// Queries a list of health check templates based on specified parameters.
 //
 // @param request - ListCloudGtmMonitorTemplatesRequest
 //
@@ -11437,7 +11545,7 @@ func ListCloudGtmMonitorTemplatesWithOptions(client *Client, request *ListCloudG
 
 // Summary:
 //
-// Queries a list of health check templates.
+// Queries a list of health check templates based on specified parameters.
 //
 // @param request - ListCloudGtmMonitorTemplatesRequest
 //
@@ -11455,7 +11563,7 @@ func ListCloudGtmMonitorTemplates(client *Client, request *ListCloudGtmMonitorTe
 
 // Summary:
 //
-// 查询递归解析内置权威解析记录
+// # Queries the record details of HTTPDNS resolution records
 //
 // @param request - ListRecursionRecordsRequest
 //
@@ -11543,7 +11651,7 @@ func ListRecursionRecordsWithOptions(client *Client, request *ListRecursionRecor
 
 // Summary:
 //
-// 查询递归解析内置权威解析记录
+// # Queries the record details of HTTPDNS resolution records
 //
 // @param request - ListRecursionRecordsRequest
 //
@@ -11561,7 +11669,7 @@ func ListRecursionRecords(client *Client, request *ListRecursionRecordsRequest) 
 
 // Summary:
 //
-// 查询递归解析内置权威域名zone
+// # Queries HTTPDNS authoritative zones
 //
 // @param request - ListRecursionZonesRequest
 //
@@ -11625,7 +11733,7 @@ func ListRecursionZonesWithOptions(client *Client, request *ListRecursionZonesRe
 
 // Summary:
 //
-// 查询递归解析内置权威域名zone
+// # Queries HTTPDNS authoritative zones
 //
 // @param request - ListRecursionZonesRequest
 //
@@ -12099,7 +12207,7 @@ func PausePdnsService(client *Client, request *PausePdnsServiceRequest) (_result
 
 // Summary:
 //
-// You can call this operation to preview a disaster recovery plan of a Global Traffic Manager (GTM) instance.
+// Views disaster recovery plan.
 //
 // @param request - PreviewGtmRecoveryPlanRequest
 //
@@ -12155,7 +12263,7 @@ func PreviewGtmRecoveryPlanWithOptions(client *Client, request *PreviewGtmRecove
 
 // Summary:
 //
-// You can call this operation to preview a disaster recovery plan of a Global Traffic Manager (GTM) instance.
+// Views disaster recovery plan.
 //
 // @param request - PreviewGtmRecoveryPlanRequest
 //
@@ -12581,7 +12689,7 @@ func ReplaceCloudGtmAddressPoolAddress(client *Client, request *ReplaceCloudGtmA
 
 // Summary:
 //
-// Replaces address pools that are associated with a Global Traffic Manager (GTM) 3.0 instance with new address pools.
+// Replaces address pools that are associated with a GTM instance with new address pools.
 //
 // @param tmpReq - ReplaceCloudGtmInstanceConfigAddressPoolRequest
 //
@@ -12647,7 +12755,7 @@ func ReplaceCloudGtmInstanceConfigAddressPoolWithOptions(client *Client, tmpReq 
 
 // Summary:
 //
-// Replaces address pools that are associated with a Global Traffic Manager (GTM) 3.0 instance with new address pools.
+// Replaces address pools that are associated with a GTM instance with new address pools.
 //
 // @param request - ReplaceCloudGtmInstanceConfigAddressPoolRequest
 //
@@ -13731,7 +13839,7 @@ func SetDNSSLBStatus(client *Client, request *SetDNSSLBStatusRequest) (_result *
 
 // Summary:
 //
-// Modifies an access policy.
+// Modifies the access policy that is available in address pools.
 //
 // Description:
 //
@@ -13787,7 +13895,7 @@ func SetDnsGtmAccessModeWithOptions(client *Client, request *SetDnsGtmAccessMode
 
 // Summary:
 //
-// Modifies an access policy.
+// Modifies the access policy that is available in address pools.
 //
 // Description:
 //
@@ -14091,6 +14199,10 @@ func SetGtmAccessMode(client *Client, request *SetGtmAccessModeRequest) (_result
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to enable health check for an address pool of a Global Traffic Manager (GTM) instance.
+//
 // @param request - SetGtmMonitorStatusRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -14139,6 +14251,10 @@ func SetGtmMonitorStatusWithOptions(client *Client, request *SetGtmMonitorStatus
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to enable health check for an address pool of a Global Traffic Manager (GTM) instance.
+//
 // @param request - SetGtmMonitorStatusRequest
 //
 // @return SetGtmMonitorStatusResponse
@@ -14229,7 +14345,7 @@ func SubmitIspFlushCacheTask(client *Client, request *SubmitIspFlushCacheTaskReq
 
 // Summary:
 //
-// Changes the access policy type for a Global Traffic Manager (GTM) instance.
+// Changes the access policy type for a GTM instance.
 //
 // @param request - SwitchDnsGtmInstanceStrategyModeRequest
 //
@@ -14281,7 +14397,7 @@ func SwitchDnsGtmInstanceStrategyModeWithOptions(client *Client, request *Switch
 
 // Summary:
 //
-// Changes the access policy type for a Global Traffic Manager (GTM) instance.
+// Changes the access policy type for a GTM instance.
 //
 // @param request - SwitchDnsGtmInstanceStrategyModeRequest
 //
@@ -15585,7 +15701,7 @@ func UpdateCloudGtmInstanceConfigBasic(client *Client, request *UpdateCloudGtmIn
 
 // Summary:
 //
-// Modifies the enabling status of an access domain name.
+// Updates the enabling status of an access domain name based on the specified parameters.
 //
 // Description:
 //
@@ -15651,7 +15767,7 @@ func UpdateCloudGtmInstanceConfigEnableStatusWithOptions(client *Client, request
 
 // Summary:
 //
-// Modifies the enabling status of an access domain name.
+// Updates the enabling status of an access domain name based on the specified parameters.
 //
 // Description:
 //
@@ -15675,7 +15791,7 @@ func UpdateCloudGtmInstanceConfigEnableStatus(client *Client, request *UpdateClo
 
 // Summary:
 //
-// Modifies the load balancing policy of a Global Traffic Manager (GTM) 3.0 instance.
+// Updates the load balancing policy of a GTM instance.
 //
 // @param request - UpdateCloudGtmInstanceConfigLbStrategyRequest
 //
@@ -15739,7 +15855,7 @@ func UpdateCloudGtmInstanceConfigLbStrategyWithOptions(client *Client, request *
 
 // Summary:
 //
-// Modifies the load balancing policy of a Global Traffic Manager (GTM) 3.0 instance.
+// Updates the load balancing policy of a GTM instance.
 //
 // @param request - UpdateCloudGtmInstanceConfigLbStrategyRequest
 //
@@ -15757,7 +15873,7 @@ func UpdateCloudGtmInstanceConfigLbStrategy(client *Client, request *UpdateCloud
 
 // Summary:
 //
-// Modifies the description of a Global Traffic Manager (GTM) 3.0 instance.
+// Updates the description of a GTM instance based on the specified parameters.
 //
 // @param request - UpdateCloudGtmInstanceConfigRemarkRequest
 //
@@ -15817,7 +15933,7 @@ func UpdateCloudGtmInstanceConfigRemarkWithOptions(client *Client, request *Upda
 
 // Summary:
 //
-// Modifies the description of a Global Traffic Manager (GTM) 3.0 instance.
+// Updates the description of a GTM instance based on the specified parameters.
 //
 // @param request - UpdateCloudGtmInstanceConfigRemarkRequest
 //
@@ -15901,7 +16017,7 @@ func UpdateCloudGtmInstanceName(client *Client, request *UpdateCloudGtmInstanceN
 
 // Summary:
 //
-// Modifies the information about a health check template.
+// Modifies the information about a health check template based on specified parameters.
 //
 // @param tmpReq - UpdateCloudGtmMonitorTemplateRequest
 //
@@ -15987,7 +16103,7 @@ func UpdateCloudGtmMonitorTemplateWithOptions(client *Client, tmpReq *UpdateClou
 
 // Summary:
 //
-// Modifies the information about a health check template.
+// Modifies the information about a health check template based on specified parameters.
 //
 // @param request - UpdateCloudGtmMonitorTemplateRequest
 //
@@ -16517,7 +16633,7 @@ func UpdateDnsGtmAccessStrategy(client *Client, request *UpdateDnsGtmAccessStrat
 
 // Summary:
 //
-// Modifies an address pool.
+// Modifies an address pool based on the specified parameters.
 //
 // @param request - UpdateDnsGtmAddressPoolRequest
 //
@@ -16577,7 +16693,7 @@ func UpdateDnsGtmAddressPoolWithOptions(client *Client, request *UpdateDnsGtmAdd
 
 // Summary:
 //
-// Modifies an address pool.
+// Modifies an address pool based on the specified parameters.
 //
 // @param request - UpdateDnsGtmAddressPoolRequest
 //
@@ -16595,7 +16711,7 @@ func UpdateDnsGtmAddressPool(client *Client, request *UpdateDnsGtmAddressPoolReq
 
 // Summary:
 //
-// Modifies the configurations of a Global Traffic Manager (GTM) instance.
+// Modifies the configurations of a Global Traffic Manager (GTM) instance by instance ID.
 //
 // @param request - UpdateDnsGtmInstanceGlobalConfigRequest
 //
@@ -16683,7 +16799,7 @@ func UpdateDnsGtmInstanceGlobalConfigWithOptions(client *Client, request *Update
 
 // Summary:
 //
-// Modifies the configurations of a Global Traffic Manager (GTM) instance.
+// Modifies the configurations of a Global Traffic Manager (GTM) instance by instance ID.
 //
 // @param request - UpdateDnsGtmInstanceGlobalConfigRequest
 //
@@ -17105,6 +17221,10 @@ func UpdateDomainRemark(client *Client, request *UpdateDomainRemarkRequest) (_re
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to modify the access policy of a Global Traffic Manager (GTM) instance.
+//
 // @param request - UpdateGtmAccessStrategyRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -17165,6 +17285,10 @@ func UpdateGtmAccessStrategyWithOptions(client *Client, request *UpdateGtmAccess
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to modify the access policy of a Global Traffic Manager (GTM) instance.
+//
 // @param request - UpdateGtmAccessStrategyRequest
 //
 // @return UpdateGtmAccessStrategyResponse
@@ -17179,6 +17303,10 @@ func UpdateGtmAccessStrategy(client *Client, request *UpdateGtmAccessStrategyReq
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to modify an address pool of a Global Traffic Manager (GTM) instance.
+//
 // @param request - UpdateGtmAddressPoolRequest
 //
 // @param runtime - runtime options for this request RuntimeOptions
@@ -17239,6 +17367,10 @@ func UpdateGtmAddressPoolWithOptions(client *Client, request *UpdateGtmAddressPo
 	return _result, _err
 }
 
+// Summary:
+//
+// You can call this operation to modify an address pool of a Global Traffic Manager (GTM) instance.
+//
 // @param request - UpdateGtmAddressPoolRequest
 //
 // @return UpdateGtmAddressPoolResponse
@@ -17587,7 +17719,7 @@ func UpdateIspFlushCacheInstanceConfig(client *Client, request *UpdateIspFlushCa
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录
+// Modifies HTTPDNS resolution records.
 //
 // @param request - UpdateRecursionRecordRequest
 //
@@ -17663,7 +17795,7 @@ func UpdateRecursionRecordWithOptions(client *Client, request *UpdateRecursionRe
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录
+// Modifies HTTPDNS resolution records.
 //
 // @param request - UpdateRecursionRecordRequest
 //
@@ -17681,7 +17813,7 @@ func UpdateRecursionRecord(client *Client, request *UpdateRecursionRecordRequest
 
 // Summary:
 //
-// 修改内置权威解析记录启用状态
+// # Modifies the status of HTTPDNS authoritative DNS resolution records
 //
 // @param request - UpdateRecursionRecordEnableStatusRequest
 //
@@ -17733,7 +17865,7 @@ func UpdateRecursionRecordEnableStatusWithOptions(client *Client, request *Updat
 
 // Summary:
 //
-// 修改内置权威解析记录启用状态
+// # Modifies the status of HTTPDNS authoritative DNS resolution records
 //
 // @param request - UpdateRecursionRecordEnableStatusRequest
 //
@@ -17751,7 +17883,7 @@ func UpdateRecursionRecordEnableStatus(client *Client, request *UpdateRecursionR
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录备注
+// Modifies description of HTTPDNS resolution records.
 //
 // @param request - UpdateRecursionRecordRemarkRequest
 //
@@ -17803,7 +17935,7 @@ func UpdateRecursionRecordRemarkWithOptions(client *Client, request *UpdateRecur
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录备注
+// Modifies description of HTTPDNS resolution records.
 //
 // @param request - UpdateRecursionRecordRemarkRequest
 //
@@ -17821,7 +17953,7 @@ func UpdateRecursionRecordRemark(client *Client, request *UpdateRecursionRecordR
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录权重
+// Modifies HTTPDNS authoritative DNS resolution record weights.
 //
 // @param request - UpdateRecursionRecordWeightRequest
 //
@@ -17873,7 +18005,7 @@ func UpdateRecursionRecordWeightWithOptions(client *Client, request *UpdateRecur
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录权重
+// Modifies HTTPDNS authoritative DNS resolution record weights.
 //
 // @param request - UpdateRecursionRecordWeightRequest
 //
@@ -17891,7 +18023,7 @@ func UpdateRecursionRecordWeight(client *Client, request *UpdateRecursionRecordW
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录权重算法启用状态
+// # Modifies the status of weight algorithm of authoritative records
 //
 // @param request - UpdateRecursionRecordWeightEnableStatusRequest
 //
@@ -17955,7 +18087,7 @@ func UpdateRecursionRecordWeightEnableStatusWithOptions(client *Client, request 
 
 // Summary:
 //
-// 修改递归解析内置权威解析记录权重算法启用状态
+// # Modifies the status of weight algorithm of authoritative records
 //
 // @param request - UpdateRecursionRecordWeightEnableStatusRequest
 //
@@ -17973,7 +18105,7 @@ func UpdateRecursionRecordWeightEnableStatus(client *Client, request *UpdateRecu
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone生效范围
+// # Modifies the effective scope of HTTPDNS
 //
 // @param tmpReq - UpdateRecursionZoneEffectiveScopeRequest
 //
@@ -18031,7 +18163,7 @@ func UpdateRecursionZoneEffectiveScopeWithOptions(client *Client, tmpReq *Update
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone生效范围
+// # Modifies the effective scope of HTTPDNS
 //
 // @param request - UpdateRecursionZoneEffectiveScopeRequest
 //
@@ -18049,7 +18181,7 @@ func UpdateRecursionZoneEffectiveScope(client *Client, request *UpdateRecursionZ
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone递归代理模式
+// # Modify the HTTPDNS recursive proxy mode
 //
 // @param request - UpdateRecursionZoneProxyPatternRequest
 //
@@ -18101,7 +18233,7 @@ func UpdateRecursionZoneProxyPatternWithOptions(client *Client, request *UpdateR
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone递归代理模式
+// # Modify the HTTPDNS recursive proxy mode
 //
 // @param request - UpdateRecursionZoneProxyPatternRequest
 //
@@ -18119,7 +18251,7 @@ func UpdateRecursionZoneProxyPattern(client *Client, request *UpdateRecursionZon
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone备注
+// Modifies the description of HTTPDNS authoritative domain names.
 //
 // @param request - UpdateRecursionZoneRemarkRequest
 //
@@ -18171,7 +18303,7 @@ func UpdateRecursionZoneRemarkWithOptions(client *Client, request *UpdateRecursi
 
 // Summary:
 //
-// 修改递归解析内置权威域名zone备注
+// Modifies the description of HTTPDNS authoritative domain names.
 //
 // @param request - UpdateRecursionZoneRemarkRequest
 //
