@@ -6370,6 +6370,10 @@ func DescribeInstanceDomainsWithContext(ctx context.Context, client *Client, req
 		}
 	}
 	query := map[string]interface{}{}
+	if !dara.IsNil(request.DomainKeywords) {
+		query["DomainKeywords"] = request.DomainKeywords
+	}
+
 	if !dara.IsNil(request.InstanceId) {
 		query["InstanceId"] = request.InstanceId
 	}
