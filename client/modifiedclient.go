@@ -26,7 +26,8 @@ func (client *Client) Init(config *openapiutil.Config) (_err error) {
 	}
 	client.EndpointRule = dara.String("regional")
 	client.EndpointMap = map[string]*string{
-		"public": dara.String("alidns.aliyuncs.com"),
+		"cn-hangzhou": dara.String("alidns.aliyuncs.com"),
+		"public":      dara.String("alidns.aliyuncs.com"),
 	}
 	_err = client.CheckConfig(config)
 	if _err != nil {
@@ -1964,12 +1965,20 @@ func CreateAtiAgentRegisterInfoWithOptions(client *Client, tmpReq *CreateAtiAgen
 		query["AgentHost"] = request.AgentHost
 	}
 
+	if !dara.IsNil(request.AgentSubHost) {
+		query["AgentSubHost"] = request.AgentSubHost
+	}
+
 	if !dara.IsNil(request.AgentVersion) {
 		query["AgentVersion"] = request.AgentVersion
 	}
 
 	if !dara.IsNil(request.ClientToken) {
 		query["ClientToken"] = request.ClientToken
+	}
+
+	if !dara.IsNil(request.DomainMode) {
+		query["DomainMode"] = request.DomainMode
 	}
 
 	if !dara.IsNil(request.EndpointsShrink) {
@@ -4053,7 +4062,7 @@ func DeleteSubDomainRecords(client *Client, request *DeleteSubDomainRecordsReque
 
 // Summary:
 //
-// Queries the details of an Agent registration.
+// Queries the details of Agent registration information.
 //
 // @param request - DescribeAtiAgentRegisterInfoRequest
 //
@@ -4101,7 +4110,7 @@ func DescribeAtiAgentRegisterInfoWithOptions(client *Client, request *DescribeAt
 
 // Summary:
 //
-// Queries the details of an Agent registration.
+// Queries the details of Agent registration information.
 //
 // @param request - DescribeAtiAgentRegisterInfoRequest
 //
@@ -4119,7 +4128,7 @@ func DescribeAtiAgentRegisterInfo(client *Client, request *DescribeAtiAgentRegis
 
 // Summary:
 //
-// 为sdk查询agent信息功能
+// Queries agent information from the Agent marketplace for the SDK.
 //
 // @param request - DescribeAtiAgentRegisterInfoMarketRequest
 //
@@ -4154,6 +4163,10 @@ func DescribeAtiAgentRegisterInfoMarketWithOptions(client *Client, request *Desc
 		query["NextToken"] = request.NextToken
 	}
 
+	if !dara.IsNil(request.TrustLevel) {
+		query["TrustLevel"] = request.TrustLevel
+	}
+
 	req := &openapiutil.OpenApiRequest{
 		Query: openapiutil.Query(query),
 	}
@@ -4179,7 +4192,7 @@ func DescribeAtiAgentRegisterInfoMarketWithOptions(client *Client, request *Desc
 
 // Summary:
 //
-// 为sdk查询agent信息功能
+// Queries agent information from the Agent marketplace for the SDK.
 //
 // @param request - DescribeAtiAgentRegisterInfoMarketRequest
 //
@@ -12128,7 +12141,7 @@ func ListAtiAgentRegisterInfos(client *Client, request *ListAtiAgentRegisterInfo
 
 // Summary:
 //
-// Queries the list of real-name registered contacts.
+// Queries the list of real-name registrants.
 //
 // @param request - ListAtiChangeLogsRequest
 //
@@ -12204,7 +12217,7 @@ func ListAtiChangeLogsWithOptions(client *Client, request *ListAtiChangeLogsRequ
 
 // Summary:
 //
-// Queries the list of real-name registered contacts.
+// Queries the list of real-name registrants.
 //
 // @param request - ListAtiChangeLogsRequest
 //
@@ -12222,7 +12235,7 @@ func ListAtiChangeLogs(client *Client, request *ListAtiChangeLogsRequest) (_resu
 
 // Summary:
 //
-// 查询实名注册人列表
+// Queries the list of real-name verified registrants.
 //
 // @param request - ListAtiRegistrantsRequest
 //
@@ -12290,7 +12303,7 @@ func ListAtiRegistrantsWithOptions(client *Client, request *ListAtiRegistrantsRe
 
 // Summary:
 //
-// 查询实名注册人列表
+// Queries the list of real-name verified registrants.
 //
 // @param request - ListAtiRegistrantsRequest
 //
@@ -16563,12 +16576,20 @@ func UpdateAtiAgentRegisterInfoWithOptions(client *Client, tmpReq *UpdateAtiAgen
 		query["AgentRegisterInfoId"] = request.AgentRegisterInfoId
 	}
 
+	if !dara.IsNil(request.AgentSubHost) {
+		query["AgentSubHost"] = request.AgentSubHost
+	}
+
 	if !dara.IsNil(request.AgentVersion) {
 		query["AgentVersion"] = request.AgentVersion
 	}
 
 	if !dara.IsNil(request.ClientToken) {
 		query["ClientToken"] = request.ClientToken
+	}
+
+	if !dara.IsNil(request.DomainMode) {
+		query["DomainMode"] = request.DomainMode
 	}
 
 	if !dara.IsNil(request.EndpointsShrink) {
@@ -16622,7 +16643,7 @@ func UpdateAtiAgentRegisterInfo(client *Client, request *UpdateAtiAgentRegisterI
 
 // Summary:
 //
-// 更新告警设置
+// Updates alert settings.
 //
 // @param request - UpdateAtiAlertSettingsRequest
 //
@@ -16674,7 +16695,7 @@ func UpdateAtiAlertSettingsWithOptions(client *Client, request *UpdateAtiAlertSe
 
 // Summary:
 //
-// 更新告警设置
+// Updates alert settings.
 //
 // @param request - UpdateAtiAlertSettingsRequest
 //
@@ -16692,7 +16713,7 @@ func UpdateAtiAlertSettings(client *Client, request *UpdateAtiAlertSettingsReque
 
 // Summary:
 //
-// Modifies a registrant profile.
+// Modifies a real-name registrant.
 //
 // @param request - UpdateAtiRegistrantRequest
 //
@@ -16780,7 +16801,7 @@ func UpdateAtiRegistrantWithOptions(client *Client, request *UpdateAtiRegistrant
 
 // Summary:
 //
-// Modifies a registrant profile.
+// Modifies a real-name registrant.
 //
 // @param request - UpdateAtiRegistrantRequest
 //
@@ -20701,6 +20722,10 @@ func VerifyAtiAgentDnsRecordsWithOptions(client *Client, request *VerifyAtiAgent
 		query["ClientToken"] = request.ClientToken
 	}
 
+	if !dara.IsNil(request.TrustLevel) {
+		query["TrustLevel"] = request.TrustLevel
+	}
+
 	req := &openapiutil.OpenApiRequest{
 		Query: openapiutil.Query(query),
 	}
@@ -20744,7 +20769,7 @@ func VerifyAtiAgentDnsRecords(client *Client, request *VerifyAtiAgentDnsRecordsR
 
 // Summary:
 //
-// 触发 ACME 预检
+// Triggers an ACME pre-check.
 //
 // @param request - VerifyAtiAgentRegisterInfoAcmeChallengeRecordRequest
 //
@@ -20792,7 +20817,7 @@ func VerifyAtiAgentRegisterInfoAcmeChallengeRecordWithOptions(client *Client, re
 
 // Summary:
 //
-// 触发 ACME 预检
+// Triggers an ACME pre-check.
 //
 // @param request - VerifyAtiAgentRegisterInfoAcmeChallengeRecordRequest
 //
